@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<div class="form">
+    <div id="example-6">
+        <parent-component></parent-component>
+    </div>
+</div>
+<script type="text/javascript">
+    new Vue({
+        el:'.form',
+        components: {
+            'parent-component':{
+                data:function(){
+                    return {
+                        a:'我是父组件的数据a'
+                    }
+                },
+                template: '<h1>{{a}}<child-component v-on:childmes="get"></child-component></h1>',  //通过v-on:接收子组件发射过来的childmes事件，注意v-on:必须放在父组件模板里的子组件标签上，如果子组件<child-component></child-component>上想要绑定原生事件如click等,需要给该事件添加修饰符.native。
+                methods:{
+                    get:function(arg){  //注意，get方法的第一个参数会接收childmes事件携带过来的子组件的数据
+                        this.a=arg;
+                    }
+                },
+                components:{
+                    'child-component': {
+                        data:function(){
+                            return {
+                                b:'我是子组件的数据b'
+                            }
+                        },
+                        template: '<span><input v-on:click="send" type="button" value="提交"/></span>', //触发send方法，执行里面的$emit
+                        methods:{
+                            send:function(){
+                                this.$emit('childmes',this.b)  //把子组件的数据作为事件发射出去，这个事件需要子组件自己触发，然后父组件可以通过v-on监听接受它
+                            }
+                        }
+                    },
+                }
+            }
+        }
+    })
+</script>
+</body>
+</html>

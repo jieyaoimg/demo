@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>正方移动框架</title>
+<link rel="stylesheet" href="frozenui/css/frozen.css">
+<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<div class="my-head">
+	<dl>
+		<dt class="f-l"><img src="images/my-pic.jpg" width="89" height="89"/> </dt>
+		<dd>张三</dd>
+		<dd>2015082548745</dd>
+		<dd>商学院-外贸管理</dd>
+	</dl>
+</div>
+<footer class="ui-footer nav p-t-10">
+	<ul class="ui-tiled">
+		<li data-href="index.html" class="nav01 link cur"><div></div><i>首页</i></li>
+		<li data-href="#" class="nav02"><div></div><i>自助报到</i></li>
+		<li data-href="#" class="nav03"><div></div><i>校园地图</i></li>
+		<li data-href="#" class="nav04"><div></div><i>在线咨询</i></li>
+		<li data-href="#" class="nav05"><div></div><i>我的信息</i></li>
+	</ul>
+</footer>
+	<section class="ui-container">
+		<div class="apply-table">
+		<table>
+			<tr>
+				<td class="bor-l bor-t">
+					<dl>
+						<dt><a href="#" target="_blank"><img src="images/my-apply-ico01.jpg" width="80" height="80"/></a> </dt>
+						<dd><a href="#" target="_blank"><h4>我的宿舍</h4><span>本部猛虎楼101</span></a></dd>
+					</dl>
+				</td>
+				<td class="bor-t bor-r">
+					<dl>
+						<dt><a href="#" target="_blank"><img src="images/my-apply-ico02.jpg" width="80" height="80"/></a> </dt>
+						<dd><a href="#" target="_blank"><h4>我的费用</h4><span>欠费500元</span></a></dd>
+					</dl>
+				</td>
+			</tr>
+			<tr>
+				<td class="bor-l bor-b">
+					<dl>
+						<dt><a href="#" target="_blank"><img src="images/my-apply-ico03.jpg" width="80" height="80"/></a> </dt>
+						<dd><a href="#" target="_blank"><h4>我的校友</h4><span>查看校友信息</span></a></dd>
+					</dl>
+				</td>
+				<td class="bor-b bor-r">
+					<dl>
+						<dt><a href="#" target="_blank"><img src="images/my-apply-ico04.jpg" width="80" height="80"/></a> </dt>
+						<dd><a href="#" target="_blank"><h4>我的志愿者</h4><span>张三，13588587458</span></a></dd>
+					</dl>
+				</td>
+			</tr>
+		</table>
+		</div>
+		<div class="myindex-li bg-fff m-t-10">
+			<ul>
+				<li class="ui-border-b my-li-01"><a href="#" target="_blank"><span class="f-l"></span>修改密码</a> </li>
+				<li class="ui-border-b my-li-02"><a href="#" target="_blank"><span class="f-l"></span>关于我们</a> </li>
+				<li class="my-li-03"><a href="#"  class="btnNext"><span class="f-l"></span>退出登陆</a> </li>
+			</ul>
+		</div>
+	</section>
+	<script src="frozenui/lib/zepto.min.js"></script>
+	<script src="frozenui/js/frozen.js"></script>
+<script src="js/layer.mobile/layer.js"></script>
+<script>
+	$(".btnNext").click(function(){
+		layer.open({
+			className:'pop-yes',
+			content: '<h4 class="ui-icon-warn-lg ui-txt-warning"></h4><div class="ui-txt-warning">身份证号/姓名与输入不匹配，请重新输入！</div>',
+//			content:'<div class="password-sucess"> <h4 class="ui-icon-success"></h4> <div>输入匹配</div></div>',
+			btn: ['确认', '取消'],
+			shadeClose: false
+		});
+	});
+</script>
+
+</body>
+</html>

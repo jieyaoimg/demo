@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>正方移动框架</title>
+<link rel="stylesheet" href="frozenui/css/frozen.css">
+<link rel="stylesheet" href="css/base.css">
+</head>
+<body class="bf-f1f1f1">
+
+<header class="ui-header ui-header-positive ui-border-b">
+	<i class="ui-icon-return" onClick="history.back()"></i>
+	<h1>校园地图</h1>
+</header>
+<footer class="ui-footer nav p-t-10">
+	<ul class="ui-tiled">
+		<li data-href="index.html" class="nav01 link cur"><div></div><i>首页</i></li>
+		<li data-href="#" class="nav02"><div></div><i>自助报到</i></li>
+		<li data-href="#" class="nav03"><div></div><i>校园地图</i></li>
+		<li data-href="#" class="nav04"><div></div><i>在线咨询</i></li>
+		<li data-href="#" class="nav05"><div></div><i>我的信息</i></li>
+	</ul>
+</footer>
+	<section class="ui-container myinfo">
+		<div class="demo-block bg-fff">
+			<div class="ui-tab">
+				<ul class="ui-tab-nav ui-border-b map-tab">
+					<li id="" class="li-01 current"></li>
+					<li class="li-02" ></li>
+					<li class="li-03" ></li>
+				</ul>
+				<ul class="ui-tab-content" style="width:300%">
+					<li class="person-info map-search">
+						<div class="ui-input ui-border-radius">
+							<input type="text" name="" value="" placeholder="请输入地址">
+						</div>
+						<div class="ui-btn-wrap">
+						    <button class="ui-btn-lg ui-btn-primary"><i class="ui-icon-search"></i></button>
+						</div>
+						<div class="ui-flex ui-flex-pack-center">
+							<img src="images/map-pic.jpg" width="320" height="348"/>
+						</div>
+
+
+					</li>
+					<li>内容2</li>
+					<li>内容3</li>
+				</ul>
+			</div>
+		</div>
+
+
+	</section>
+	<script src="frozenui/lib/zepto.min.js"></script>
+	<script src="frozenui/js/frozen.js"></script>
+<script class="demo-script">
+	(function (){
+		var tab = new fz.Scroll('.ui-tab', {
+			role: 'tab',
+			autoplay: false,
+			interval: 3000
+		});
+		/* 滑动开始前 */
+		tab.on('beforeScrollStart', function(fromIndex, toIndex) {
+			console.log(fromIndex,toIndex);// from 为当前页，to 为下一页
+		})
+	})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+    <script src="node_modules/vue-router/dist/vue-router.js"></script>
+</head>
+<body>
+<div class="app">
+    <ul class="nav">
+        <!-- router-link会被渲染成a标签，to指向一个链接路径 -->
+        <li><router-link to="/index">首页</router-link></li>
+        <li><router-link to="/news">新闻</router-link></li>
+    </ul>
+    <!-- 路由匹配的组件将渲染到这里-->
+    <router-view></router-view>
+</div>
+<script type="text/javascript">
+//（1）定义路由的组件
+    const index={
+        template:'<h3>欢迎进入首页</h3>'
+    }
+    const news={
+        template:`
+            <h3>
+                欢迎进入新闻页<br/>
+                <router-link to="/news/shanghai">上海</router-link>  //把子路由的组件的template渲染到父路由的组件的template中
+                <router-view></router-view>
+            </h3>
+        `
+    }
+    const shanghai={  //子路由的组件
+        template:'<h3>欢迎进入上海新闻</h3>'
+    }
+//（2）定义路由，每个路由对应一个组件
+    const routes=[
+        {path:'/index',component:index},
+        {
+            path:'/news',
+            component:news,
+            children:[   //嵌套子路由
+                {path:'shanghai', component:shanghai}
+            ]
+        },
+        {path:'/',redirect:'/index'}  //重定向
+    ]
+//（3）创建router实例，把上一步定义好的路由部署进来。其实（1）（2）两步也可以合并写到（3）里面。
+    const router=new VueRouter({
+        routes:routes
+    })
+//（4）创建和挂载根实例
+    const app=new Vue({
+        el:'.app',
+        router:router
+    })
+</script>
+</body>
+</html>

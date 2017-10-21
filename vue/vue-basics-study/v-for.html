@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<div class="news-conponent">
+    <div class="newslist">
+        <h3 v-on:mouseover="newsTab1()">资讯</h3>
+        <ul v-show="defaultOn">
+            <li v-for="(item, key,index) in newsArr1">{{item}}+{{key}}+{{index}}</li>
+        </ul>
+    </div>
+    <br/><br/><br/>
+    <div class="newslist">
+        <h3 v-on:mouseover="newsTab2()">热点</h3>
+        <ul v-show="defaultOff">
+            <li v-for="(item, key,index) in newsArr2">{{item}}+{{key}}+{{index}}</li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    new Vue({
+        el:'.news-conponent',
+        data:{
+            newsArr1:{
+                a:'111',
+                b:'222'
+            },
+            newsArr2:{
+                a:'333',
+                b:'444'
+            },
+            defaultOn:true,
+            defaultOff:false
+        },
+        methods:{
+            newsTab1:function () {
+                this.defaultOn=false;
+                this.defaultOff=true;
+            },
+            newsTab2:function () {
+                this.defaultOn=true;
+                this.defaultOff=false;
+            }
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="get">
+    <input type="text" value="请输入"/>
+    <button>提交</button>
+</form>
+<!-socket.io.js是一个隐藏的用于web端的js文件，它已经封装好了一个io()函数，用于操作服务器端发来的websocket->
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+<script type="text/javascript">
+    const socket = io("http://127.0.0.3:3001");
+    socket.on("serQue1",(mes)=>{
+        console.log(mes);
+        console.log("吃过了!");
+    });
+    socket.on("serQue2",(mes)=>{
+        console.log(mes);
+        console.log("你猜!");
+    });
+    socket.emit("webQue1","你是谁？");
+</script>
+
+</body>
+</html>

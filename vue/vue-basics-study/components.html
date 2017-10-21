@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<div class="form">
+    <div id="example-6">
+        <news-list></news-list>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    var newsListTemp={
+        template:'<h3>新闻标题:{{meg}}</h3>',
+        data:function () {
+            return {
+                meg:'123456'
+            }
+        }
+    }
+    new Vue({
+        el:'.form',
+        data:{
+            mes:'123456'
+        },
+        components:{
+            'news-list':newsListTemp
+        }
+    })
+</script>
+</body>
+</html>

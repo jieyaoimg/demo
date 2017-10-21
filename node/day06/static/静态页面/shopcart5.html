@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>正方移动框架</title>
+<link rel="stylesheet" href="frozenui/css/frozen.css">
+<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+	<header class="ui-header ui-header-positive ui-border-b">
+		<i class="ui-icon-return" onClick="history.back()"></i>
+		<h1>生活用品</h1>
+	</header>
+	<section class="ui-container">
+		    <!--<h2 class="p-b-10 p-t-10 font-color cart-des ui-whitespace clearfix"><span class="f-l"></span><i class="f-l">物品类别</i><a href="shopcart6.html" class="f-r ui-btn ui-btn-primary">筛选</a></h2>-->
+			<ul class="p-b-10 p-t-10 font-color clearfix bg-fff ui-whitespace sel-bar">
+				<li>
+					<a href="#"><span>洗漱用品</span><i></i></a>
+					<dl>
+						<dd>牙刷</dd>
+						<dd>剃须刀</dd>
+						<dd>剃须刀</dd>
+						<dd>洗脸盆</dd>
+						<dd>床单被罩</dd>
+						<dd>牙刷</dd>
+						<dd>牙刷</dd>
+						<dd>毛巾</dd>
+						<dd>洗发水</dd>
+					</dl>
+				</li>
+				<li class="">
+					<a href="#"><span>生活品</span><i></i></a>
+					<dl>
+						<dd>牙刷</dd>
+						<dd>剃须刀</dd>
+						<dd>牙刷</dd>
+						<dd>洗脸盆</dd>
+						<dd>床单被罩</dd>
+						<dd>牙刷</dd>
+						<dd>牙刷</dd>
+						<dd>毛巾</dd>
+						<dd>洗发水</dd>
+					</dl>
+				</li>
+				<li>
+					<a href="#"><span>生活</span><i></i></a>
+					<dl>
+						<dd>牙刷</dd>
+						<dd>剃须刀</dd>
+						<dd>牙刷</dd>
+						<dd>洗脸盆</dd>
+						<dd>床单被罩</dd>
+						<dd>剃须刀</dd>
+						<dd>牙刷</dd>
+						<dd>毛巾</dd>
+						<dd>洗发水</dd>
+					</dl>
+				</li>
+				<li><a href="#"><span>生活</span><i></i></a><dl></dl></li>
+			</ul>
+
+			<ul class="ui-tab-content" style="width:100%">
+				<li class="person-info">
+					<div class="ui-row ui-whitespace necessities p-t-10 p-b-10">
+						<div class="ui-col ui-col-50 necessities-list">
+							<dl class="clearfix">
+								<dt><img src="./images/my-pic.jpg" width="" height=""/></dt>
+								<dd class="f-l p-l-10">
+									<ul class="font-color"><li>牙刷</li><li>洗漱用品</li></ul>
+								</dd>
+								<dd class="f-r ui-txt-warning p-r-10">10元</dd>
+							</dl>
+						</div>
+						<div class="ui-col ui-col-50 necessities-list">
+							<dl class="clearfix">
+								<dt><img src="./images/my-pic.jpg" width="" height=""/></dt>
+								<dd class="f-l p-l-10">
+									<ul class="font-color"><li>牙刷</li><li>洗漱用品</li></ul>
+								</dd>
+								<dd class="f-r ui-txt-warning p-r-10">10元</dd>
+							</dl>
+						</div>
+						<div class="ui-col ui-col-50 necessities-list">
+							<dl class="clearfix">
+								<dt><img src="./images/my-pic.jpg" width="" height=""/></dt>
+								<dd class="f-l p-l-10">
+									<ul class="font-color"><li>牙刷</li><li>洗漱用品</li></ul>
+								</dd>
+								<dd class="f-r ui-txt-warning p-r-10">10元</dd>
+							</dl>
+						</div>
+						<div class="ui-col ui-col-50 necessities-list">
+							<dl class="clearfix">
+								<dt><img src="./images/my-pic.jpg" width="" height=""/></dt>
+								<dd class="f-l p-l-10">
+									<ul class="font-color"><li>牙刷</li><li>洗漱用品</li></ul>
+								</dd>
+								<dd class="f-r ui-txt-warning p-r-10">10元</dd>
+							</dl>
+						</div>
+						<div class="ui-col ui-col-50 necessities-list">
+							<dl class="clearfix">
+								<dt><img src="./images/my-pic.jpg" width="" height=""/></dt>
+								<dd class="f-l p-l-10">
+									<ul class="font-color"><li>牙刷</li><li>洗漱用品</li></ul>
+								</dd>
+								<dd class="f-r ui-txt-warning p-r-10">10元</dd>
+							</dl>
+						</div>
+						<div class="ui-col ui-col-50 necessities-list">
+							<dl class="clearfix">
+								<dt><img src="./images/my-pic.jpg" width="" height=""/></dt>
+								<dd class="f-l p-l-10">
+									<ul class="font-color"><li>牙刷</li><li>洗漱用品</li></ul>
+								</dd>
+								<dd class="f-r ui-txt-warning p-r-10">10元</dd>
+							</dl>
+						</div>
+
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="shopcart-ico">3</div>
+	</section>
+	<script src="frozenui/lib/zepto.min.js"></script>
+	<script src="frozenui/js/frozen.js"></script>
+	<script src="./js/jquery.min.js"></script>
+	<script>
+	$(function(){
+		var arrLi=$('.sel-bar li');
+		$(arrLi).attr('selbar','t');
+        for(var i=0; i<arrLi.length; i++){
+        	$(arrLi[i]).click(function(){
+				if($(this).attr('selbar')=='t'){
+					$(this).siblings().attr({class:'',selbar:'t'});
+					$(this).attr({class:'cur',selbar:'f'});
+				}else{
+					$(this).attr({class:'',selbar:'t'});
+				}
+        	});
+			$(arrLi[i]).children('a').click(function(){
+				if($(this).attr('class')=='sel-colse-tip'){
+					$(this).attr('class','');
+					$(this).children('i').text('');
+				}
+			});
+        }
+		var arrDd=$('.sel-bar li dd');
+		$(arrDd).click(function(){
+			var thisText=$(this).text();
+			$(this).parent().siblings('a').attr('class','sel-colse-tip');
+			var thisA=$(this).parent().siblings('a').children('i');
+			$(thisA).append(thisText);
+		});
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>正方移动框架</title>
+<link rel="stylesheet" href="frozenui/css/frozen.css">
+<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<div class="ui-slider" style="height:126px">
+	<ul class="ui-slider-content" style="width: 300%">
+		<li><span style="background-image:url(images/banner01.jpg?640*380)"></span></li>
+		<li><span style="background-image:url(images/banner01.jpg?640*380)"></span></li>
+		<li><span style="background-image:url(images/banner01.jpg?640*380)"></span></li>
+	</ul>
+</div>
+<footer class="ui-footer nav p-t-10">
+	<ul class="ui-tiled">
+		<li data-href="index.html" class="nav01 link cur"><div></div><i>首页</i></li>
+		<li data-href="#" class="nav02"><div></div><i>自助报到</i></li>
+		<li data-href="#" class="nav03"><div></div><i>校园地图</i></li>
+		<li data-href="#" class="nav04"><div></div><i>在线咨询</i></li>
+		<li data-href="#" class="nav05"><div></div><i>我的信息</i></li>
+	</ul>
+</footer>
+	<section class="ui-container">
+		<div class="notice">
+			<h1>通知公告</h1>
+			<ul class="ui-list ui-list-text ui-list-link ui-border-tb">
+			<li class="ui-border-t">
+				<h4 class=""><a href="#" target="_blank">关于2013年度大学生思想政治教育专项教育专项教育专项课 </a></h4>
+				<div class="ui-txt-info">2015-12-14</div>
+			</li>
+				<li class="ui-border-t">
+					<h4 class=""><a href="#" target="_blank">关于2013年育专项课 </a></h4>
+					<div class="ui-txt-info">2015-12-14</div>
+				</li>
+				<li class="ui-border-t">
+					<h4 class=""><a href="#" target="_blank">关于2013年度大学生思想政治教育专项教育专教育专项课 </a></h4>
+					<div class="ui-txt-info">2015-12-14</div>
+				</li>
+				<li class="ui-border-t">
+					<h4 class=""><a href="#" target="_blank">关于2013年度大学生思想政治教育专项教育专育专育专育专育专育专育专育专育专项教育专项课 </a></h4>
+					<div class="ui-txt-info">2015-12-14</div>
+				</li>
+				<li class="ui-border-t">
+					<h4 class=""><a href="#" target="_blank">关于2013年度大学生思想政治项教育专项课 </a></h4>
+					<div class="ui-txt-info">2015-12-14</div>
+				</li>
+			</ul>
+		</div>
+		<div class="ui-flex ui-flex-pack-center">
+			<div class="ui-txt-muted">上拉加载更多</div>
+		</div>
+		<div class="ui-loading-wrap">
+			<p>正在加载中...</p>
+			<i class="ui-loading"></i>
+		</div>
+	</section>
+	<script src="frozenui/lib/zepto.min.js"></script>
+	<script src="frozenui/js/frozen.js"></script>
+<script>
+	(function(){
+
+		var slider = new fz.Scroll('.ui-slider', {
+			role: 'slider',
+			indicator: true,
+			autoplay: true,
+			interval: 3000
+		});
+
+		slider.on('beforeScrollStart', function(from, to) {
+			console.log(from, to);
+		});
+
+		slider.on('scrollEnd', function(cruPage) {
+			console.log(curPage);
+		});
+
+	})();
+</script>
+</body>
+</html>

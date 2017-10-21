@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<div class="form">
+    <div id="example-6">
+        <parent-component></parent-component>
+    </div>
+</div>
+<script type="text/javascript">
+    var vm=new Vue();
+    new Vue({
+        el:'.form',
+        components: {
+            'parent-component':{
+                data:function(){
+                    return {
+                        a:'我是父组件的数据a'
+                    }
+                },
+                template: '<h2>我是父组件->{{a}}<br/><child-component></child-component></h2>',
+                mounted:function(){   //选项，生命周期钩子
+                    var _this=this;
+                    vm.$on('childmes',function (b) {
+                        _this.a=b;  //关于函数中的this，谁调用了该函数，this就指向谁，所以此处this指向vm，那么我们要想让this指向父组件，就需要在vm.$on作用域外用 _this把父组件的this保存进来。
+                    })
+                },
+                components:{
+                    'child-component': {
+                        data:function(){
+                            return {
+                                b:'我是子组件的数据b'
+                            }
+                        },
+                        template: '<h4>我是子组件->{{b}}<span><input v-on:click="send" type="button" value="提交"/></span></h4>',
+                        methods:{
+                            send:function(){
+                                vm.$emit('childmes',this.b)  //此处是子组件调用了this所在的函数，所以this指向子组件
+                            }
+                        }
+                    },
+                }
+            }
+        }
+    })
+</script>
+</body>
+</html>

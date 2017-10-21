@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <child-name a="b"></child-name>
+    <child-gender></child-gender>
+</div>
+<script type="text/javascript">
+    const vm=new Vue();
+    new Vue({
+        el:"#app",
+        components:{
+            childName:{
+                data:function () {
+                    return{name:"tom"}
+                },
+                template:"<h1>{{name}}</h1>",
+                mounted:function () {
+                    const _this=this;
+                    vm.$on("exchange",function (gender) {
+                        _this.name=gender;
+                    })
+                }
+            },
+            childGender:{
+                data:function () {
+                    return{gender:"man"}
+                },
+                template:"<h1 @click='send'>{{gender}}</h1>",
+                methods:{
+                    send:function () {
+                        vm.$emit("exchange",this.gender)
+                    }
+                }
+            }
+        }
+    })
+</script>
+</body>
+</html>

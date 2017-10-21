@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+    <script src="node_modules/vue-router/dist/vue-router.js"></script>
+</head>
+<body>
+<div class="app">
+    <ul class="nav">
+        <li><router-link to="/index/001">首页</router-link></li>
+        <li><router-link to="/news">新闻</router-link></li>
+    </ul>
+    <router-view></router-view>
+</div>
+<script type="text/javascript">
+    const index={
+        template:`<h3>欢迎进入首页,=>{{$route.params.name}}</h3>`
+    }
+    const router=new VueRouter({
+        routes:[
+            {path:'/index/:name',component:index}
+        ]
+    })
+    const app=new Vue({
+        router:router,
+        el:'.app'
+    })
+</script>
+</body>
+</html>

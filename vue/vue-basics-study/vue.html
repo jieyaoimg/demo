@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cssreset.css" type="text/css"/>
+    <link rel="stylesheet" href="bs/css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="bs/js/bootstrap.js" type="text/css"/>
+    <style type="text/css">
+        .font{font:bold 20px/40px "Microsoft YaHei"}
+        .text-danger{color:red;}
+        .bor{border:3px solid #ddd; padding: 20px; text-align: center;}
+    </style>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<form>
+    <div class="form-group">
+        <label for="username">用户名</label>
+        <input type="text" class="form-control" id="username" placeholder="用户名">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">密码</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="密码">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+<div id="reg">
+    <p v-bind:class="{font:orfont}">{{mes|reverse("颠倒：")|touppercase("大写：")}}</p>
+    <template v-if="">
+        <h3>标题三</h3>
+    </template>
+</div>
+<script>
+Vue.filter('reverse',function (value,argument01) {
+    return argument01+value.split('').reverse().join();
+})
+Vue.filter('touppercase',function (value,argument01) {
+    return argument01+value.toUpperCase();
+})
+new Vue({
+    el:'#reg',
+    data:{
+        orfont:true,
+        mes:'hello world'
+    }
+})
+</script>
+</body>
+</html>
+
+
+
+/*filters:{
+reverse:function (value,argument01) {
+return argument01+value.split('').reverse().join();
+},
+touppercase:function (value,argument01) {
+return argument01+value.toUpperCase();
+}
+}*/

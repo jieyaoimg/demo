@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>正方移动框架</title>
+<link rel="stylesheet" href="frozenui/css/frozen.css">
+<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+	<header class="ui-header ui-header-positive ui-border-b">
+		<i class="ui-icon-return" onClick="history.back()"></i>
+		<h1>购物车</h1>
+	</header>
+	<section class="ui-container ui-whitespace bg-fff">
+		<h2 class="p-b-10 p-t-10 font-color cart-des"><span></span>物品购买说明：本环节只在购物车中订单生成后，才算真正办理</h2>
+		<div class="p-b-10 cart">
+			<dl class="ui-border-t">
+				<dt class="f-l cart-pic">
+					<label class="ui-radio f-l" for="radio">
+						<input type="radio">
+					</label>
+					<img class="f-l" src="./images/my-pic.jpg" width="100" height="85"/>
+				</dt>
+				<dd><h3>袜子秋冬新款，纯棉</h3></dd>
+				<dd class="cart-style">规格：31，样式：红色</dd>
+				<dd class="cart-num"><a href="#">-</a><span>2</span><a href="#">+</a> </dd>
+				<dd class="cart-price">$31</dd>
+				<dd class="cart-del"><a href="#" class="clearfix"><i class="ui-icon-cart f-l"></i><i class="ui-icon-close-page f-l"></i></a></dd>
+			</dl>
+			<dl class="ui-border-t">
+				<dt class="f-l cart-pic">
+					<label class="ui-radio f-l" for="radio">
+						<input type="radio">
+					</label>
+					<img class="f-l" src="./images/my-pic.jpg" width="100" height="85"/>
+				</dt>
+				<dd><h3>袜子秋冬新款，纯棉</h3></dd>
+				<dd class="cart-style">规格：31，样式：红色</dd>
+				<dd class="cart-num"><a href="#">-</a><span>2</span><a href="#">+</a> </dd>
+				<dd class="cart-price">$31</dd>
+				<dd class="cart-del"><a href="#" class="clearfix"><i class="ui-icon-cart f-l"></i><i class="ui-icon-close-page f-l"></i></a></dd>
+			</dl>
+			<dl class="ui-border-t">
+				<dt class="f-l cart-pic">
+					<label class="ui-radio f-l" for="radio">
+						<input type="radio">
+					</label>
+					<img class="f-l" src="./images/my-pic.jpg" width="100" height="85"/>
+				</dt>
+				<dd><h3>袜子秋冬新款，纯棉</h3></dd>
+				<dd class="cart-style">规格：31，样式：红色</dd>
+				<dd class="cart-num"><a href="#">-</a><span>2</span><a href="#">+</a> </dd>
+				<dd class="cart-price">$31</dd>
+				<dd class="cart-del"><a href="#" class="clearfix"><i class="ui-icon-cart f-l"></i><i class="ui-icon-close-page f-l"></i></a></dd>
+			</dl>
+			<div class="ui-border-t p-t-10 p-b-10">
+				<label class="ui-radio" for="radio">
+					<input type="radio" name="radio">全选
+				</label>
+				<p class="f-r">共2件商品，合计：<span class="ui-txt-warning">20</span>元</p>
+			</div>
+			<div class="ui-row">
+				<button class="ui-btn-lg ui-btn-primary">生成订单</button>
+			</div>
+		</div>
+
+	</section>
+	<div class="ui-dialog">
+		<div class="ui-dialog-cnt">
+
+			<div class="ui-dialog-bd">
+				<h4 class="ui-icon-warn-lg ui-txt-warning"></h4>
+				<div class="ui-txt-warning">身份证号/姓名与输入不匹配，请重新输入！</div>
+			</div>
+			<div class="ui-dialog-ft">
+				<button type="button" data-role="button">确定</button>
+			</div>
+		</div>
+	</div>
+	<script src="frozenui/lib/zepto.min.js"></script>
+	<script src="frozenui/js/frozen.js"></script>
+	<script class="demo-script">
+		$('#btnNext').click(function(){
+			$(".ui-dialog").dialog("show");
+		});
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html5>
+    <head></head>
+    <body>
+    <p><input type="text" value="name" name="name" id="name"/></p>
+    <p><input type="password" value="password" name="password" id="password"/></p>
+    <p id="regBtn">注册</p>
+    <script type="text/javascript">
+        const name=document.querySelector('#name').valueOf();
+        document.querySelector('#regBtn').onclick=ajax('post','/doReg','',(result)=>{
+            if(result==1){
+                alert("恭喜你，注册成功");
+            }else{
+                alert("sorry，注册失败");
+            }
+        })
+    </script>
+    <script type="text/javascript">
+        function ajax(method, url, data, success) {
+            //method是请求方式，url是请求地址，date是传送数据，success是一个参数为xhr.responseText的回调函数
+            //具体使用形式如：ajax(post,index.php,username=tom&password=123456,function(getDate){要执行的操作});
+            var xhr = new XMLHttpRequest();
+            if (method == 'get' && data) {
+                url += '?' + data;
+            }
+            xhr.open(method,url,true);
+            if (method == 'get') {
+                xhr.send();
+            } else {
+                xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded');
+                xhr.send(data);
+            }
+            xhr.onreadystatechange = function() {
+                if ( xhr.readyState == 4 ) {
+                    if ( xhr.status == 200 ) {
+                        success && success(xhr.responseText);
+                    } else {
+                        alert('出错了,Err：' + xhr.status);
+                    }
+                }
+            }
+        }
+    </script>
+    </body>
+</html5>

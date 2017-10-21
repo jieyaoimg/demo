@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>正方移动框架</title>
+<link rel="stylesheet" href="frozenui/css/frozen.css">
+<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+	<header class="ui-header ui-header-positive ui-border-b">
+		<i class="ui-icon-return" onClick="history.back()"></i>
+		<h1>我的订单</h1>
+	</header>
+	<section class="ui-container ui-whitespace bg-fff">
+		<h2 class="p-b-10 p-t-10 font-color cart-des"><span></span><em class="ui-txt-warning">待支付</em></h2>
+		<div class="p-b-10 cart">
+			<dl class="ui-border-t clearfix">
+				<dt class="f-l cart-pic">
+					<img class="f-l" src="./images/my-pic.jpg" width="100" height="85"/>
+				</dt>
+				<dd class="p-t-10"><h3>袜子秋冬新款，纯棉</h3></dd>
+				<dd class="cart-style">规格：31，样式：红色</dd>
+				<dd class="cart-price"><span>$31</span><em class="f-r">×2</em></dd>
+			</dl>
+			<dl class="ui-border-t clearfix">
+				<dt class="f-l cart-pic">
+					<img class="f-l" src="./images/my-pic.jpg" width="100" height="85"/>
+				</dt>
+				<dd class="p-t-10"><h3>袜子秋冬新款，纯棉</h3></dd>
+				<dd class="cart-style">规格：31，样式：红色</dd>
+				<dd class="cart-price"><span>$31</span><em class="f-r">×2</em></dd>
+			</dl>
+			<dl class="ui-border-t clearfix">
+				<dt class="f-l cart-pic">
+					<img class="f-l" src="./images/my-pic.jpg" width="100" height="85"/>
+				</dt>
+				<dd class="p-t-10"><h3>袜子秋冬新款，纯棉</h3></dd>
+				<dd class="cart-style">规格：31，样式：红色</dd>
+				<dd class="cart-price"><span>$31</span><em class="f-r">×2</em></dd>
+			</dl>
+			<div class="ui-border-t p-t-10 p-b-10 ui-flex ui-flex-pack-end">
+				<p>共2件商品，合计：<span class="ui-txt-warning">20</span>元</p>
+			</div>
+			<div class="ui-btn-wrap ui-flex ui-flex-pack-end ui-border-t">
+					<button class="ui-btn">
+						删除订单
+					</button>
+					<button class="ui-btn ui-btn-primary">
+						去缴费
+					</button>
+			</div>
+		</div>
+
+	</section>
+	<div class="ui-dialog">
+		<div class="ui-dialog-cnt">
+
+			<div class="ui-dialog-bd">
+				<h4 class="ui-icon-warn-lg ui-txt-warning"></h4>
+				<div class="ui-txt-warning">身份证号/姓名与输入不匹配，请重新输入！</div>
+			</div>
+			<div class="ui-dialog-ft">
+				<button type="button" data-role="button">确定</button>
+			</div>
+		</div>
+	</div>
+	<script src="frozenui/lib/zepto.min.js"></script>
+	<script src="frozenui/js/frozen.js"></script>
+	<script class="demo-script">
+		$('#btnNext').click(function(){
+			$(".ui-dialog").dialog("show");
+		});
+
+	</script>
+</body>
+</html>

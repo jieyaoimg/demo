@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>正方移动框架</title>
+<link rel="stylesheet" href="frozenui/css/frozen.css">
+<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+
+<header class="ui-header ui-header-positive ui-border-b">
+	<i class="ui-icon-return" onClick="history.back()"></i>
+	<h1>个人信息</h1>
+</header>
+	<section class="ui-container myinfo bg-fff person-info">
+		<dl class="ui-border-b">
+			<dt class="f-l">录取号：</dt>
+			<dd class="f-r">201585854785</dd>
+		</dl>
+		<dl class="ui-border-b">
+			<dt class="f-l">姓名：</dt>
+			<dd class="f-r">张三</dd>
+		</dl>
+		<dl class="ui-border-b">
+			<dt class="f-l">健康状况：</dt>
+			<dd class="f-r"><a class="clearfix" href="#" id="health01">请选择<i class="ui-icon-arrow f-r"></i></a>
+				<div class="ui-dialog ui-dialog-sel ui-dialog01">
+					<div class="ui-dialog-cnt">
+						<div class="ui-dialog-bd">
+							<div class="ui-form ui-border-t">
+								<form action="#">
+									<div class="ui-form-item ui-form-item-radio ui-border-b">
+
+										<label class="ui-radio" for="radio">
+											<input type="radio" name="radio">
+										</label>
+										<p>身体健康</p>
+									</div>
+									<div class="ui-form-item ui-form-item-radio ui-border-b">
+
+										<label class="ui-radio" for="radio">
+											<input type="radio" name="radio">
+										</label>
+										<p>身体健康</p>
+									</div>
+									<div class="ui-form-item ui-form-item-radio ui-border-b">
+
+										<label class="ui-radio" for="radio">
+											<input type="radio" name="radio">
+										</label>
+										<p>身体健康</p>
+									</div>
+									<div class="ui-form-item ui-form-item-radio ui-border-b">
+
+										<label class="ui-radio" for="radio">
+											<input type="radio" checked name="radio">
+										</label>
+										<p>身体不健康</p>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="ui-dialog-ft">
+							<button type="button" data-role="button">确定</button>
+						</div>
+					</div>
+				</div>
+			</dd>
+		</dl>
+		<dl class="ui-border-b">
+			<dt class="f-l">何时入党：</dt>
+			<dd class="f-r"><a class="clearfix" href="#" target="_blank">请选择<i class="ui-icon-arrow f-r"></i></a></dd>
+		</dl>
+		<dl class="ui-border-b">
+			<dt class="f-l">性别：</dt>
+			<dd class="f-r"><a class="clearfix" href="#" target="_blank">请选择<i class="ui-icon-arrow f-r"></i></a></dd>
+		</dl>
+		<dl class="ui-border-b">
+			<dt class="f-l">户口性质：</dt>
+			<dd class="f-r"><a class="clearfix" href="#" target="_blank">请选择<i class="ui-icon-arrow f-r"></i></a></dd>
+		</dl>
+		<dl class="ui-border-b">
+			<dt class="f-l">手机号码：</dt>
+			<dd class="f-r"><a class="clearfix" href="#" target="_blank">请输入<i class="ui-icon-arrow f-r"></i></a></dd>
+		</dl>
+	</section>
+	<script src="frozenui/lib/zepto.min.js"></script>
+	<script src="frozenui/js/frozen.js"></script>
+<script class="demo-script">
+	$('#health01').click(function(){
+		$(".ui-dialog01").dialog("show");
+	});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>正方移动框架</title>
+<link rel="stylesheet" href="frozenui/css/frozen.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="js/tongxunlu/style.css">
+</head>
+<body>
+
+	<header class="ui-header ui-header-positive ui-border-b">
+		<i class="ui-icon-return" onClick="history.back()"></i>
+		<h1>通讯录</h1>
+	</header>
+	<section class="ui-container">
+		<div class="ui-searchbar-wrap ui-border-b m-b-10 focus phone-list-search">
+			<div class="ui-searchbar ui-border-radius">
+				<i class="ui-icon-search"></i>
+				<div class="ui-searchbar-text">搜索号码（2-10位）</div>
+				<div class="ui-searchbar-input"><input value="" type="tel" placeholder="按姓名，部门名称，短号搜索" autocapitalize="off"></div>
+			</div>
+			<button class="ui-searchbar-cancel">搜索</button>
+		</div>
+		    <div id="letter" ></div>
+		    <div class="sort_box">
+			<div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">张三</div>
+			</div>
+			<div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">b李四</div>
+			</div>
+				<div class="sort_list">
+					<div class="num_logo">
+						<img src="images/img.png" alt="">
+					</div>
+					<div class="num_name">b张三</div>
+				</div>
+				<div class="sort_list">
+					<div class="num_logo">
+						<img src="images/img.png" alt="">
+					</div>
+					<div class="num_name">b李四</div>
+				</div><div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">c张三</div>
+			</div>
+				<div class="sort_list">
+					<div class="num_logo">
+						<img src="images/img.png" alt="">
+					</div>
+					<div class="num_name">c李四</div>
+				</div><div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">c张三</div>
+			</div>
+				<div class="sort_list">
+					<div class="num_logo">
+						<img src="images/img.png" alt="">
+					</div>
+					<div class="num_name">李四</div>
+				</div><div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">张三</div>
+			</div>
+				<div class="sort_list">
+					<div class="num_logo">
+						<img src="images/img.png" alt="">
+					</div>
+					<div class="num_name">李四</div>
+				</div><div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">张三</div>
+			</div>
+				<div class="sort_list">
+					<div class="num_logo">
+						<img src="images/img.png" alt="">
+					</div>
+					<div class="num_name">李四</div>
+				</div>
+			<div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">王五</div>
+			</div>
+			<div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">刘六</div>
+			</div>
+			<div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">马七</div>
+			</div>
+			<div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">黄八</div>
+			</div>
+			<div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">莫九</div>
+			</div>
+			<div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">陈十</div>
+			</div>
+			<div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">a九</div>
+			</div>
+			<div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">1十</div>
+			</div>
+				<div class="sort_list">
+					<div class="num_logo">
+						<img src="images/img.png" alt="">
+					</div>
+					<div class="num_name">a九</div>
+				</div>
+				<div class="sort_list">
+					<div class="num_logo">
+						<img src="images/img.png" alt="">
+					</div>
+					<div class="num_name">1十</div>
+				</div><div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">a九</div>
+			</div>
+				<div class="sort_list">
+					<div class="num_logo">
+						<img src="images/img.png" alt="">
+					</div>
+					<div class="num_name">1十</div>
+				</div><div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">a九</div>
+			</div>
+				<div class="sort_list">
+					<div class="num_logo">
+						<img src="images/img.png" alt="">
+					</div>
+					<div class="num_name">1十</div>
+				</div><div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">a九</div>
+			</div>
+				<div class="sort_list">
+					<div class="num_logo">
+						<img src="images/img.png" alt="">
+					</div>
+					<div class="num_name">1十</div>
+				</div><div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">a九</div>
+			</div>
+				<div class="sort_list">
+					<div class="num_logo">
+						<img src="images/img.png" alt="">
+					</div>
+					<div class="num_name">1十</div>
+				</div><div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">a九</div>
+			</div>
+				<div class="sort_list">
+					<div class="num_logo">
+						<img src="images/img.png" alt="">
+					</div>
+					<div class="num_name">1十</div>
+				</div><div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">a九</div>
+			</div>
+				<div class="sort_list">
+					<div class="num_logo">
+						<img src="images/img.png" alt="">
+					</div>
+					<div class="num_name">1十</div>
+				</div><div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">a九</div>
+			</div>
+				<div class="sort_list">
+					<div class="num_logo">
+						<img src="images/img.png" alt="">
+					</div>
+					<div class="num_name">1十</div>
+				</div><div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">a九</div>
+			</div>
+				<div class="sort_list">
+					<div class="num_logo">
+						<img src="images/img.png" alt="">
+					</div>
+					<div class="num_name">1十</div>
+				</div><div class="sort_list">
+				<div class="num_logo">
+					<img src="images/img.png" alt="">
+				</div>
+				<div class="num_name">a九</div>
+			</div>
+				<div class="sort_list">
+					<div class="num_logo">
+						<img src="images/img.png" alt="">
+					</div>
+					<div class="num_name">1十</div>
+				</div>
+		</div>
+			<div class="initials">
+			<ul>
+				<li><img src="images/068.png"></li>
+			</ul>
+		</div>
+
+	</section>
+	<div class="ui-dialog">
+		<div class="ui-dialog-cnt">
+
+			<div class="ui-dialog-bd">
+				<h4 class="ui-icon-warn-lg ui-txt-warning"></h4>
+				<div class="ui-txt-warning">身份证号/姓名与输入不匹配，请重新输入！</div>
+			</div>
+			<div class="ui-dialog-ft">
+				<button type="button" data-role="button">确定</button>
+			</div>
+		</div>
+	</div>
+<!--	<script src="frozenui/lib/zepto.min.js"></script>
+	<script src="frozenui/js/frozen.js"></script>-->
+	<script src="js/tongxunlu/jquery-1.8.3.min.js"></script>
+	<script src="js/tongxunlu/jquery.charfirst.pinyin.js"></script>
+	<script src="js/tongxunlu/sort.js"></script>
+
+</body>
+</html>

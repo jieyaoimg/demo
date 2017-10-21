@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>正方移动框架</title>
+<link rel="stylesheet" href="frozenui/css/frozen.css">
+<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+
+<header class="ui-header ui-header-positive ui-border-b">
+	<i class="ui-icon-return" onClick="history.back()"></i>
+	<h1>在线咨询</h1>
+</header>
+<footer class="ui-footer nav p-t-10">
+	<ul class="ui-tiled">
+		<li data-href="index.html" class="nav01 link cur"><div></div><i>所有咨询</i></li>
+		<li data-href="#" class="nav03"><div></div><i>常见问题</i></li>
+		<li data-href="#" class="nav04"><div></div><i>我的问题</i></li>
+		<li data-href="#" class="nav05"><div></div><i>我要提问</i></li>
+	</ul>
+</footer>
+	<section class="ui-container myinfo bg-fff">
+		<div class="mainframe buttom_0" id="wrapper" style="overflow: hidden;">
+			<div class="mainframe1" style="transform-origin: 0px 0px 0px; position: absolute; top: 0px; left: 0px;">
+
+				<div class="list">
+					<ul>
+						<li>
+							<p class="f-l m-r-10">咨询版块</p>
+							<p class="f-l">
+								<select name="">
+									<option value="入学须知">入学须知</option>
+									<option value="学校文化">学校文化</option>
+									<option value="心理健康">心理健康</option>
+									<option value="常见问题解答">常见问题解答</option>
+								</select>
+							</p>
+						</li>
+						<li>
+							<p class="m-r-10 f-l">咨询主题</p>
+							<p class="f-l"><input type="text" class="input"></p>
+						</li>
+						<li>
+							<p class="m-r-10 f-l">咨询内容</p>
+							<p class="f-l"><textarea rows="5" cols="30" name="" class="textarea height_50"></textarea></p>
+						</li>
+					</ul>
+				</div>
+				<div class="main_but"><input type="button" class="main_but1" value="提　　交"></div>
+				<div class="clearfloat"></div>
+			</div>
+		</div>	</section>
+	<script src="frozenui/lib/zepto.min.js"></script>
+	<script src="frozenui/js/frozen.js"></script>
+
+</body>
+</html>

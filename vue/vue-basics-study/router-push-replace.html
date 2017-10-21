@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+    <script src="node_modules/vue-router/dist/vue-router.js"></script>
+</head>
+<body>
+<div class="app">
+    <ul class="nav">
+        <li><router-link to="/index">首页</router-link></li>
+        <li><a v-on:click="push">新闻</a></li>
+    </ul>
+    <router-view></router-view>
+</div>
+<script type="text/javascript">
+    const index={
+        template:`<h3>欢迎进入首页</h3>`
+    }
+    const news={
+        template:`<h3>欢迎进入新闻页</h3>`
+    }
+    const router=new VueRouter({
+        routes:[
+            {path:'/index',component:index},
+            {path:'/news',component:news}
+        ]
+    })
+    const app=new Vue({
+        router:router,
+        el:'.app',
+        methods:{
+            push:function () {
+                router.push({path:'/news'}) //注意router是上面的new VueRouter实例，
+            }
+        }
+    })
+</script>
+</body>
+</html>

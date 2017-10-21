@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图01(层叠式)</title>
+    <style type="text/css">
+        p{width:300px; height: 200px;}
+        p:before{content: '';border:20px solid transparent; border-bottom:20px solid #ddd; display: block; width: 0;}
+    </style>
+</head>
+<body>
+<button id="btn01">
+<a id="btna"><</a></button>
+<button id="btn02">></button>
+<p>12345</p>
+<script>
+    var nowtime=new Date();
+    console.log(nowtime.getHours());
+    console.log(nowtime);
+    console.log(nowtime.toUTCString());
+    console.log(nowtime.toLocaleString());
+    console.log(nowtime.toGMTString());
+
+window.onload=function () {
+    var btn01=document.getElementById('btn01');
+    var btn02=document.getElementById('btn02');
+    var getp=document.getElementsByTagName('p');
+    var arr=getp[0].innerText.split('');
+    btn01.onclick=function () {
+        arr.push(arr[0]);
+        arr.shift();
+        getp[0].innerText=arr;
+    }
+    btn02.onclick=function () {
+        arr.unshift(arr[arr.length-1]);
+        arr.pop();
+        getp[0].innerText=arr;
+    }
+}
+</script>
+</body>
+</html>

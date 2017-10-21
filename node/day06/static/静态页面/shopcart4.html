@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>正方移动框架</title>
+<link rel="stylesheet" href="frozenui/css/frozen.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="js/unslider/unslider.css">
+<link rel="stylesheet" href="js/unslider/unslider-dots.css">
+	<style type="text/css">
+		.banner { position: relative; overflow: auto; }
+		.banner li { list-style: none; }
+		.banner ul li { float: left;}
+	</style>
+</head>
+<body>
+	<header class="ui-header ui-header-positive ui-border-b">
+		<i class="ui-icon-return" onClick="history.back()"></i>
+		<h1>军训服装</h1>
+	</header>
+	<section class="ui-container ui-whitespace">
+		<div class="banner p-t-10">
+			<ul>
+				<li style="background-image:url(images/banner02.jpg?640*380)">
+					<img class="f-l" src="./images/banner02.jpg" width="100%"/>
+				</li>
+				<li style="background-image:url(images/banner02.jpg?640*380)">
+					<img class="f-l" src="./images/banner02.jpg" width="100%"/>
+				</li>
+				<li style="background-image:url(images/banner02.jpg?640*380)">
+					<img class="f-l" src="./images/banner02.jpg" width="100%"/>
+				</li>
+			</ul>
+		</div>
+		<p class="ui-flex ui-flex-pack-center bg-fff">上衣</p>
+		<dl class="clo-sel ui-border-b p-b-10">
+			<dt class="p-t-10">选择尺码：</dt>
+			<dd>
+				<ul class="ui-row">
+					<li class="ui-col ui-col-33"><a href="#"> 35/175cm</a></li>
+					<li class="ui-col ui-col-33"><a href="#"> 35/175cm</a></li>
+					<li class="ui-col ui-col-33 sel"><a href="#"> 35/175cm</a></li>
+					<li class="ui-col ui-col-33"><a href="#"> 35/175cm</a></li>
+					<li class="ui-col ui-col-33"><a href="#"> 35/175cm</a></li>
+					<li class="ui-col ui-col-33"><a href="#"> 35/175cm</a></li>
+					<li class="ui-col ui-col-33"><a href="#"> 35/175cm</a></li>
+					<li class="ui-col ui-col-33"><a href="#"> 35/175cm</a></li>
+				</ul>
+			</dd>
+		</dl>
+			<div class="banner p-t-10">
+				<ul>
+					<li style="background-image:url(images/banner02.jpg?640*380)">
+						<img class="f-l" src="./images/banner02.jpg" width="100%"/>
+					</li>
+					<li style="background-image:url(images/banner02.jpg?640*380)">
+						<img class="f-l" src="./images/banner02.jpg" width="100%"/>
+					</li>
+					<li style="background-image:url(images/banner02.jpg?640*380)">
+						<img class="f-l" src="./images/banner02.jpg" width="100%"/>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<p class="ui-flex ui-flex-pack-center bg-fff">裤子</p>
+		<dl class="clo-sel ui-border-b p-b-10">
+			<dt class="p-t-10">选择尺码：</dt>
+			<dd>
+				<ul class="ui-row">
+					<li class="ui-col ui-col-33"><a href="#"> 35/175cm</a></li>
+					<li class="ui-col ui-col-33"><a href="#"> 35/175cm</a></li>
+					<li class="ui-col ui-col-33 sel"><a href="#"> 35/175cm</a></li>
+					<li class="ui-col ui-col-33"><a href="#"> 35/175cm</a></li>
+					<li class="ui-col ui-col-33"><a href="#"> 35/175cm</a></li>
+					<li class="ui-col ui-col-33"><a href="#"> 35/175cm</a></li>
+					<li class="ui-col ui-col-33"><a href="#"> 35/175cm</a></li>
+					<li class="ui-col ui-col-33"><a href="#"> 35/175cm</a></li>
+				</ul>
+			</dd>
+		</dl>
+
+	</section>
+	<div class="ui-dialog">
+		<div class="ui-dialog-cnt">
+
+			<div class="ui-dialog-bd">
+				<h4 class="ui-icon-warn-lg ui-txt-warning"></h4>
+				<div class="ui-txt-warning">身份证号/姓名与输入不匹配，请重新输入！</div>
+			</div>
+			<div class="ui-dialog-ft">
+				<button type="button" data-role="button">确定</button>
+			</div>
+		</div>
+	</div>
+	<script src="frozenui/js/frozen.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/unslider/unslider-min.js"></script>
+	<script type="text/javascript">
+		$('.banner').unslider({
+			speed: 500,               //  滚动速度
+			delay: 2000,              //  动画延迟
+			complete: function() {},  //  动画完成的回调函数
+			keys: true,               //  启动键盘导航
+			dots: false,               //  显示点导航
+			fluid: true,              //  支持响应式设计
+			autoplay:true
+		});
+	</script>
+</body>
+</html>

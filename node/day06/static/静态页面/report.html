@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="report">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>正方移动框架</title>
+<link rel="stylesheet" href="frozenui/css/frozen.css">
+<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<header class="ui-header ui-header-positive ui-border-b report-tit">
+	<i class="ui-icon-return" onClick="history.back()"></i>
+	<h1>自主报到</h1>
+</header>
+<footer class="ui-footer nav p-t-10">
+	<ul class="ui-tiled">
+		<li data-href="index.html" class="nav01 link cur"><div></div><i>首页</i></li>
+		<li data-href="#" class="nav02"><div></div><i>自助报到</i></li>
+		<li data-href="#" class="nav03"><div></div><i>校园地图</i></li>
+		<li data-href="#" class="nav04"><div></div><i>在线咨询</i></li>
+		<li data-href="#" class="nav05"><div></div><i>我的信息</i></li>
+	</ul>
+</footer>
+	<section class="ui-container">
+		<div class="">
+			<ul class="ui-row report-conlist">
+				<li class="ui-col ui-col-50 report-lf report-lf-sel">
+					<a class="report-img f-r" href="#" target="_blank">
+						<img class="" src="images/report-ico01.png" width="56" height="56"/>
+					    <h4>完善个人信息</h4>
+					</a>
+				</li>
+				<li class="ui-col ui-col-50 report-rt report-rt-sel">
+					<a class="report-img f-l" href="#" target="_blank">
+						<img class="" src="images/report-ico02.png" width="56" height="56"/>
+						<h4>网上选宿舍</h4>
+						<h6 class="ui-txt-warning">(必选)</h6>
+					</a>
+				</li>
+				<li class="ui-col ui-col-50 report-lf">
+					<a class="report-img f-r" href="#" target="_blank">
+						<img class="" src="images/report-ico03.png" width="56" height="56"/>
+						<h4>生活用品</h4>
+						<h6 class="ui-txt-warning">(必选)</h6>
+					</a>
+				</li>
+				<li class="ui-col ui-col-50 report-rt">
+					<a class="report-img f-l" href="#" target="_blank">
+						<img class="" src="images/report-ico04.png" width="56" height="56"/>
+						<h4>军训服装</h4>
+					</a>
+				</li>
+				<li class="ui-col ui-col-50 report-lf">
+					<a class="report-img f-r" href="#" target="_blank">
+						<img class="" src="images/report-ico05.png" width="56" height="56"/>
+						<h4>学平险购买</h4>
+					</a>
+				</li>
+				<li class="ui-col ui-col-50 report-rt">
+					<a class="report-img f-l" href="#" target="_blank">
+						<img class="" src="images/report-ico06.png" width="56" height="56"/>
+						<h4>一卡通充值</h4>
+					</a>
+				</li>
+				<li class="ui-col ui-col-50 report-lf">
+					<a class="report-img f-r" href="#" target="_blank">
+						<img class="" src="images/report-ico07.png" width="56" height="56"/>
+						<h4>网上缴费</h4>
+					</a>
+				</li>
+
+
+			</ul>
+		</div>
+	</section>
+	<script src="frozenui/lib/zepto.min.js"></script>
+	<script src="frozenui/js/frozen.js"></script>
+<script>
+	(function(){
+
+		var slider = new fz.Scroll('.ui-slider', {
+			role: 'slider',
+			indicator: true,
+			autoplay: true,
+			interval: 3000
+		});
+
+		slider.on('beforeScrollStart', function(from, to) {
+			console.log(from, to);
+		});
+
+		slider.on('scrollEnd', function(cruPage) {
+			console.log(curPage);
+		});
+
+	})();
+</script>
+</body>
+</html>
