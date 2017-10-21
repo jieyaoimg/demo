@@ -2,331 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55a036bf-1972-4ed8-8c73-972e682aeac4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/Application/Home/View/another/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/Application/Home/View/index/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/Application/Home/View/index/info.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/Public/css/another/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/Public/css/another/index.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/Public/css/index/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/Public/css/index/index.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/Public/css/vendors.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/Public/css/vendors.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/Public/js/another/index.91e0fac1fd8493060c99.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/Public/js/another/index.91e0fac1fd8493060c99.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/Public/js/index/index.91e0fac1fd8493060c99.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/Public/js/index/index.91e0fac1fd8493060c99.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/Public/js/vendors.91e0fac1fd8493060c99.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/Public/js/vendors.91e0fac1fd8493060c99.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/source/another/index/app.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/source/another/index/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/source/another/index/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/source/another/index/static/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/source/components/A/A.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/source/components/B/B.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/source/index/index/app.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/source/index/index/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/source/index/index/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/source/index/index/static/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/source/index/info/info.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/Webpack-Vue-MultiplePage-master/Webpack-Vue-MultiplePage-master/webpack.config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/my-project/src/components/ttttt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/.babelrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/.postcssrc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/build/build.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/build/check-versions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/build/dev-client.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/build/dev-server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/build/utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/build/vue-loader.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/build/webpack.base.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/build/webpack.dev.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/build/webpack.prod.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/config/dev.env.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/config/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/config/prod.env.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/App.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/api/file.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/api/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/api/table.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/api/user.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/assets/images/start_loading.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/assets/scss/components/_animation.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/assets/scss/components/_base.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/assets/scss/components/_dialog.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/assets/scss/components/_editor.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/assets/scss/components/_layout.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/assets/scss/components/_media.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/assets/scss/components/_reset.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/assets/scss/components/_scroll-bar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/assets/scss/components/_start_loading.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/assets/scss/main.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/common/config/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/common/fetch/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/common/port_uri/code.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/common/port_uri/file.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/common/port_uri/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/common/port_uri/table.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/common/port_uri/user.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/common/storage/cookie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/common/storage/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/common/storage/storage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/common/tools/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/common/tools/tools_base64.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/common/tools/tools_uri.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/common/tools/tools_verify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/components/bottomToolBar/index.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/components/charts/index.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/components/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/components/leftSlide/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/components/leftSlide/index.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/components/mainContent/footer/index.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/components/mainContent/headerSection/index.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/components/mainContent/headerSection/menuRight/index.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/components/mainContent/index.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/components/panelTitle/index.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/components/search/index.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/components/simpleImageUpload/index.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/mock/file.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/mock/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/mock/table.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/mock/user.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/pages/App.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/pages/charts/bar.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/pages/error/404.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/pages/error/images/404_error.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/pages/home/index.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/pages/table/base.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/pages/table/save.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/pages/table/sort.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/pages/user/images/login_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/pages/user/images/login_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/pages/user/login.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/plugins/date/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/plugins/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/router/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/store/actions/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/store/actions/type.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/store/getters/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/store/getters/type.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/store/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/store/mutations/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/store/mutations/type.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/src/store/states/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-admin-master/vue-admin-master/static/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/.babelrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/.eslintignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/.eslintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/.nojekyll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/build/config/ENV.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/build/config/PATHS.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/build/config/PORTS.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/build/config/style-rules.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/build/dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/build/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/build/prod.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/build/webpack.base.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/build/webpack.dev.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/build/webpack.prod.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/css/app.0ad153.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/js/app.62bef8.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/js/manifest.b3d0c9.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/js/vendor.05926d.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/static/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/static/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/static/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/static/bundle/plugins-00354ef8eb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/static/bundle/plugins-839bf7d848.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/static/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/static/font-awesome/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/static/font-awesome/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/static/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/static/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/static/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/static/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/static/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/dist/static/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/LANGS.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/fonts/fontawesome/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/fonts/fontawesome/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/fonts/fontawesome/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/fonts/fontawesome/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/fonts/fontawesome/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/fonts/fontawesome/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/gitbook-plugin-fontsettings/fontsettings.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/gitbook-plugin-fontsettings/website.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/gitbook-plugin-highlight/ebook.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/gitbook-plugin-highlight/website.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/gitbook-plugin-lunr/lunr.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/gitbook-plugin-lunr/search-lunr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/gitbook-plugin-search/lunr.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/gitbook-plugin-search/search-engine.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/gitbook-plugin-search/search.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/gitbook-plugin-search/search.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/gitbook-plugin-sharing/buttons.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/gitbook.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/images/apple-touch-icon-precomposed-152.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/images/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/gitbook/theme.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/search_index.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/zh-cn/Features.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/zh-cn/Getting-started.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/zh-cn/Reference.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/zh-cn/Structure.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/zh-cn/development/Ajax-interface.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/zh-cn/development/Best-practice.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/zh-cn/development/CORS-and-Proxy.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/zh-cn/development/Configuration.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/zh-cn/development/Service-layer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/zh-cn/development/State-management.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/zh-cn/development/URL-is-soul-of-SPA.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/zh-cn/development/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/zh-cn/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/_book/zh-cn/search_index.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/zh-cn/Features.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/zh-cn/Getting-started.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/zh-cn/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/zh-cn/Reference.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/zh-cn/SUMMARY.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/zh-cn/Structure.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/zh-cn/development/Ajax-interface.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/zh-cn/development/Best-practice.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/zh-cn/development/CORS-and-Proxy.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/zh-cn/development/Configuration.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/zh-cn/development/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/zh-cn/development/Service-layer.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/zh-cn/development/State-management.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/docs/zh-cn/development/URL-is-soul-of-SPA.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/mock/browser-xhr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/mock/controllers/auth.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/mock/controllers/msg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/mock/db/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/mock/middlewares/interceptor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/mock/middlewares/notFound.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/mock/middlewares/res.ajaxReturn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/mock/middlewares/simpleLogger.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/mock/node-app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/mock/routes/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/screenshot.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/assets/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/assets/css/common.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/assets/img/larger.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/assets/img/smaller.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/assets/less/normalize.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/assets/scss/normalize.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/components/App.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/components/Breadcrumb.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/components/Navbar.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/components/Pagination.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/components/Select/LimitSelect.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/components/Select/Select2.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/components/Sidebar/Link.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/components/Sidebar/index.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/filters/dateTimeFormatter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/filters/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/mixins/autoSyncWithQuery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/mixins/updateQuery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/routes/hooks/afterEach/docTitleReplacer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/routes/hooks/afterEach/scrollToTop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/routes/hooks/afterEach/simpleLogger.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/routes/hooks/beforeEach/authInterceptor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/routes/hooks/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/routes/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/routes/map/auth.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/routes/map/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/routes/map/msg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/services/authService.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/services/msgService.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/services/xhr/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/services/xhr/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/utils/trimQs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/utils/updateQuery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/views/auth/login.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/views/auth/logout.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/views/index.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/views/msg/_components/AuthorSelect.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/views/msg/_components/MsgForm.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/views/msg/_components/OptBtnGroup.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/views/msg/_mixins/autoLoadByParams.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/views/msg/add.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/views/msg/detail.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/views/msg/index.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/views/msg/list.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/src/views/msg/update.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/font-awesome/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/font-awesome/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/plugins/jquery.ajax.loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/plugins/jquery.scrollTo.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/plugins/jquery.toast/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/plugins/jquery.toast/jquery.toast.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/plugins/jquery.toast/jquery.toast.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/plugins/moment.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/plugins/select2/select2.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/plugins/select2/select2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/plugins/sweetalert/sweetalert.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue-demo-master/vue-demo-master/static/plugins/sweetalert/sweetalert.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/.babelrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/config/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/docs/1.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/docs/2.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/src/app.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/src/components/header.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/src/components/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/src/config/routes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/src/css/common.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/src/less/common.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/src/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/src/pages/home/index.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/src/pages/index/index.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/src/pages/index/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/src/pages/login/index.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/src/pages/signout/index.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/src/store/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/src/store/user.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/src/template/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/vue2-demo-master/vue2-demo-master/webpack.config.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/day09" afterPath="$PROJECT_DIR$/node/day09" />
@@ -383,8 +58,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="68">
+              <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -524,7 +199,7 @@
     <handled-path value="$PROJECT_DIR$/vue/my-project/node_modules" />
     <handled-path value="$PROJECT_DIR$/vue/vue-basics-study/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="y" value="40" />
     <option name="width" value="1612" />
@@ -916,7 +591,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1181069000" />
+    <option name="totallyTimeSpent" value="1181703000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -928,7 +603,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="32" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="32" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
@@ -1280,8 +955,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="68">
+          <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
           <folding />
         </state>
       </provider>
