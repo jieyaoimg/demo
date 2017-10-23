@@ -1,13 +1,15 @@
 .DS_Store
 node_modules/
 dist/
-.idea/
 vue-other-demo/
+phpMyAdmin/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
 # Editor directories and files
+# 点文件不起作用？？？
+.idea/
 .idea
 *.suo
 *.ntvs*
