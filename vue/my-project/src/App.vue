@@ -11,6 +11,9 @@
 import axios from 'axios'
 export default {
   name: 'app',
+  methods:{
+
+  },
   mounted:function () {
     axios.get('?counter')
       .then(function (response) {
