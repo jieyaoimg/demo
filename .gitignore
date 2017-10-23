@@ -3,6 +3,7 @@ node_modules/
 dist/
 vue-other-demo/
 phpMyAdmin/
+111.txt
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
