@@ -1,31 +1,137 @@
-module.exports = {
-    "extends": "eslint:recommended",  //继承另一个eslint配置
-    "env": {     //指定执行环境
-        "browser": true,
-        "node": true,
-        "commonjs": true,
-        "es6": true
-    },
-    "parserOptions": {        //通过parserOptions，指定校验的ecma的版本，及ecma的一些特性
-        "ecmaVersion": 6,     //指定ECMAScript支持的版本，6为ES6，8为ES8...
-        "sourceType": "module",    //指定来源(import)的模式类型，有两种”script”或”module”
-        "ecmaFeatures": {     //这是个对象，表示你想使用的额外的语言特性
-            "jsx": true       //启动JSX
-        },
-    },
-    /*
-    * rules规则：
-    *    "off" or 0 - 关闭规则
-    *    "warn" or 1 - 将规则视为一个警告（不会影响退出码）
-    *    "error" or 2 - 将规则视为一个错误 (退出码为1)
-    */
-    "rules": {
-        "no-console": "off",
-        "indent": [ "error", 4 ],
-        "quotes": [ "error", "single" ]
-    },
-    "plugins": [  //第三方插件。在使用插件之前，你必须使用 npm 安装它们。插件名称可以省略 eslint-plugin- 前缀。注意：全局安装的 ESLint 只能使用全局安装的插件。本地安装的 ESLint 不仅可以使用本地安装的插件还可以使用全局安装的插件。
-        "plugin1",
-        "eslint-plugin-plugin2"
-    ]
-};
+//axios拦截器
+axios.interceptors.request.use(function(){/*...*/});
+//axios实例拦截器
+var instance = axios.create();
+instance.interceptors.request.use(function(){/*...*/});
+//移除拦截器：
+axios.interceptors.rquest.eject(myInterceptor);
+
+//添加一个请求拦截器
+axios.interceptors.request.use(function(config){
+    //在请求发送之前做一些事
+    return config;
+},function(error){
+    //当出现请求错误是做一些事
+    return Promise.reject(error);
+});
+
+//添加一个返回拦截器
+axios.interceptors.response.use(function(response){
+    //对返回的数据进行一些处理
+    return response;
+},function(error){
+    //对返回的错误进行一些处理
+    return Promise.reject(error);
+});
+
+
+axios.get('user/12345')
+.catch(function(error){
+    if(error.response){
+        //存在请求，但是服务器的返回一个状态码
+        //他们都在2xx之外
+        console.log(error.response.data);
+        console.log(error.response.status);
+        console.log(error.response.headers);
+    }else{
+        //一些错误是在设置请求时触发的
+        console.log('Error',error.message);
+    }
+    console.log(error.config);
+});
+
+//使用qs库来格式化数据
+import qs from 'qs'
+axios.post('/foo', qs.stringify({'bar': 123}))
+//使用URLSearchParams格式化数据（URLSearchParams是web的一个新API，有些浏览器不支持，需要安装一个polyfill：url-search-params）
+var params = new URLSearchParams()
+params.append('param1', 'value1')
+params.append('param2', 'value2')
+axios.post('/foo', params)
+
+//使用node.js的querystring模块：
+var querystring = require('querystring');
+axios.post('http://something.com/', querystring.stringify({foo:'bar'}));
+//使用qs库来格式化数据
+import qs from 'qs'
+axios.post('/foo', qs.stringify({'bar': 123}))
+
+//发起 POST请求
+axios({
+    method:'post',//方法
+    url:'/user/12345',//地址
+    data:{//参数
+        firstName:'Fred',
+        lastName:'Flintstone'
+    }
+});
+
+
+//发起一个get请求，参数为给定的ID
+axios.get('/user?ID=1234')
+.then(function(respone){
+    console.log(response);
+})
+.catch(function(error){
+    console.log(error);
+});
+//发起一个post请求
+axios.post('/user',{
+    firstName:'friend',
+    lastName:'Flintstone'
+})
+.then(function(response){
+    console.log(response);
+})
+.catch(function(error){
+    console.log(error);
+});
+
+//发起一个多重并发请求
+function getUserAccount () {
+  return axios.get('?counter')
+}
+function getUserPermissions () {
+  return axios.get('?counter')
+}
+axios.all([getUserAccount(), getUserPermissions()])//axios.all()参数是一个数组，数组的每一项都是一个axios()或axios.get()之类的API,依次被遍历执行
+  .then(axios.spread(function (res1, res2) { //对应axios.all()里数组的每一项，依次返回它们的response。spread中文翻译：传播
+     console.log('res1:'+res1)
+     console.log('res2:'+res2)
+  }))
+
+
+axios.get('/user/12345')
+  .then(function(response){
+    console.log(response.data);
+    console.log(response.status);
+    console.log(response.statusText);
+    console.log(response.headers);
+    console.log(response.config);
+  });
+
+const newAxios=axios.create({//创建一个axios实例，newAxios有了axios的一部分属性和方法
+})
+newAxios.get('?counter')
+  .then(function (res) {
+    console.log(res)
+  })
+
+
+//全局默认设置
+axios.defaults.baseURL = 'https://api.example.com';
+axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+axios.defaults.headers.post['Content-Type']='application/x-www-form-urlencoded';
+
+//实例中自定义默认设置
+var instance = axios.create({
+    baseURL:'https://api.example.com'  //给实例一个默认设置
+});
+instance.defaults.headers.common['Authorization'] = AUTH_TOKEN;//改变实例的默认设置
+
+
+var instance = axios.create(); //此处timeout优先级低
+instance.defaults.timeout = 2500;//覆盖掉上一行的timeout，此处优先级中
+instance.get('/longRequest',{////覆盖掉上一行的timeout，此处优先级高
+    timeout:5000
+});

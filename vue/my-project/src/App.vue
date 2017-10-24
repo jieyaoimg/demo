@@ -2,37 +2,42 @@
   <div id="app">
     <img src="./assets/logo.png">
     <router-link to="/">首页</router-link>
-    <router-link to="/counter">counter</router-link>
+    <li v-on:click="axiosTxt">
+      <router-link to="/counter">counter</router-link>
+    </li>
+<!--    <li v-on:click="axiosTxt">
+      <router-link to="/counter?name=tom">tom</router-link>
+    </li>-->
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import axios from 'axios'
-export default {
-  name: 'app',
-  methods:{
+  import axios from 'axios'
 
-  },
-  mounted:function () {
-    axios.get('?counter')
-      .then(function (response) {
-        console.log(`${response}666`)
-      })
-      .catch(function (error) {
-        console.log(`${error}777`)
-      })
+  export default {
+    name: 'app',
+    methods: {
+      axiosTxt: function () {
+        axios.post('/',{
+          hash:'counter'
+        })
+          .then(function (res) {
+            console.log('111'+res)
+          })
+
+      }
+    }
   }
-}
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
 </style>
