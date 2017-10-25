@@ -2,12 +2,9 @@
   <div id="app">
     <img src="./assets/logo.png">
     <router-link to="/">首页</router-link>
-    <li v-on:click="axiosTxt">
+    <li v-on:click="">
       <router-link to="/counter">counter</router-link>
     </li>
-<!--    <li v-on:click="axiosTxt">
-      <router-link to="/counter?name=tom">tom</router-link>
-    </li>-->
     <router-view></router-view>
   </div>
 </template>
@@ -18,15 +15,7 @@
   export default {
     name: 'app',
     methods: {
-      axiosTxt: function () {
-        axios.post('/',{
-          hash:'counter'
-        })
-          .then(function (res) {
-            console.log('111'+res)
-          })
-
-      }
+      
     }
   }
 </script>

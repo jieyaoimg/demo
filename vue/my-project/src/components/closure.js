@@ -135,3 +135,44 @@ instance.defaults.timeout = 2500;//覆盖掉上一行的timeout，此处优先�
 instance.get('/longRequest',{////覆盖掉上一行的timeout，此处优先级高
     timeout:5000
 });
+
+//举个简单的例子，假设我们想让一个数组里的数值翻倍。
+//用命令式编程风格实现，像下面这样：
+var numbers = [1,2,3,4,5]
+var doubled = []
+for(var i = 0; i < numbers.length; i++) {
+  var newNumber = numbers[i] * 2
+  doubled.push(newNumber)
+}
+console.log(doubled) //=> [2,4,6,8,10]
+//而使用声明式编程方法，我们可以用 Array.map 函数，像下面这样：
+var numbers = [1,2,3,4,5]
+var doubled = numbers.map(function(n) {
+  return n * 2
+})
+console.log(doubled) //=> [2,4,6,8,10]
+
+
+const pro=new Promise(function(resolv,reject){
+
+})
+pro.then(function(){
+
+},function(){
+
+})
+//Promise.all用法
+Promise
+.all([runAsync1(), runAsync2(), runAsync3()])
+.then(function(results){
+    console.log(results);
+});
+//Promise.race、Promise.resolve、Promise.reject用法
+const runAsync1=Promise.resolve(data)
+const runAsync2=Promise.resolve(data)
+const runAsync3=Promise.resolve(data)
+Promise
+.race([runAsync1(), runAsync2(), runAsync3()])
+.then(function(results){
+  console.log(results);
+});

@@ -15,14 +15,7 @@ const router = new Router({
       path: '/counter',
       name: 'counter',
       component: counter
-    }/*,
-    {
-      path: '/counter',
-      params: {
-        name: 'tom'
-      },
-      component: Hello
-    }*/
+    }
   ]
 })
 
