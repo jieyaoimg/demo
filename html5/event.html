@@ -18,7 +18,9 @@
   <script type="text/javascript">
       const getTit = document.querySelectorAll(".tit")[0]
       const getH3 = document.querySelector("h3")
-
+      document.addEventListener("touchend",function(ev){
+        ev.preventDefault()
+      })
       getTit.addEventListener("touchend",function(ev){
         console.log(111)
       })
