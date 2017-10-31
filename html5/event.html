@@ -20,6 +20,7 @@
   <script type="text/javascript">
       const getTit = document.querySelectorAll(".tit")[0]
       const getH3 = document.querySelector("h3")
+      const getP=document.querySelector("p")
       document.addEventListener("touchstart",function(ev){
         ev.preventDefault()
       })
@@ -29,6 +30,9 @@
       getH3.addEventListener("touchstart",function(ev){
         console.log(222)
         alert(111)
+        ev.stopPropagation()
+      })
+      getP.addEventListener("touchstart",function(ev){
         ev.stopPropagation()
       })
   </script>
