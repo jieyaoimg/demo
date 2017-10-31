@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <style type="text/css">
-
+    .tit{height: 1000px}
   </style>
 </head>
 
@@ -18,18 +18,16 @@
   <script type="text/javascript">
       const getTit = document.querySelectorAll(".tit")[0]
       const getH3 = document.querySelector("h3")
-      document.addEventListener("touchend",function(ev){
-        ev.preventDefault()
-      })
       document.addEventListener("touchstart",function(ev){
         ev.preventDefault()
       })
-      getTit.addEventListener("touchend",function(ev){
+      getTit.addEventListener("touchstart",function(ev){
         console.log(111)
       })
-      getH3.addEventListener("touchend",function(ev){
+      getH3.addEventListener("touchstart",function(ev){
         console.log(222)
         alert(111)
+        ev.stopPropagation()
       })
   </script>
 </body>
