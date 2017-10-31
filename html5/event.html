@@ -14,12 +14,12 @@
 
 <body>
   <ul>
-    <li>我是列表</li>
+    <li>通过阻止冒泡，我有touch默认事件</li>
   </ul>
   <div class="tit">
-    <h3>请点击我！</h3>
+    <h3>点击我可以弹出窗口！</h3>
   </div>
-  <p>阿娜达</p>
+  <p>我没有touch默认事件</p>
   <script type="text/javascript">
       const getTit = document.querySelectorAll(".tit")[0]
       const getH3 = document.querySelector("h3")
@@ -27,15 +27,15 @@
       document.addEventListener("touchstart",function(ev){
         ev.preventDefault()
       })
+      getUl.addEventListener("touchstart",function(ev){
+        ev.stopPropagation()
+      })
       getTit.addEventListener("touchstart",function(ev){
         console.log(111)
       })
       getH3.addEventListener("touchend",function(ev){
         console.log(222)
         alert(111)
-        ev.stopPropagation()
-      })
-      getUl.addEventListener("touchstart",function(ev){
         ev.stopPropagation()
       })
   </script>
