@@ -14,13 +14,15 @@
   <a href="http://www.163.com">163</a>
   <a href="http://www.taobao.com">淘宝</a> 
   <script type="text/javascript">
-      const getA = document.querySelectorAll("a");
+      const getA = document.querySelectorAll("a")
       for (var i = 0; i < getA.length; i++) {
         getA[i].addEventListener("click", function (e) {
           e.preventDefault()
+        })
+        getA[i].addEventListener("touchstart", function (e) {
           window.location.href=this.href
         })
-      };
+      }
   </script>
   
 </body>
