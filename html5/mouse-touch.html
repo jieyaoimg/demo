@@ -20,8 +20,8 @@
       })
       const getA = document.querySelectorAll("a")
       for (let i = 0; i < getA.length; i++) {
-        getA[i].addEventListener("touchstart", function (e) {
-          e.preventDefault()
+        getA[i].addEventListener("touchstart", function (ev) {
+          ev.preventDefault()
           // window.location.href=this.href
         })
       }
