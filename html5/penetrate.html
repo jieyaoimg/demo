@@ -13,7 +13,11 @@
   <a href="http://www.baidu.com">baidu</a>
   <div></div>
   <script type="text/javascript">
+  const getA=document.querySelector("a")
   const getDiv=document.querySelector("div")
+  getA.addEventListener("click",function(e){
+    e.preventDefault()
+  })
   getDiv.addEventListener("touchend",function(e){
     this.style.display='none'
   })  
