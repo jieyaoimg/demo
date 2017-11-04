@@ -20,7 +20,10 @@
     getA[i].addEventListener("click",function(e){
       e.preventDefault()
     })
-  };
+    getA[i].addEventListener("touchstart", function (e) {
+          window.location.href=this.href
+    })
+  }
   getDiv.addEventListener("touchend",function(e){
     this.style.display='none'
   })
