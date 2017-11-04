@@ -18,6 +18,9 @@
       document.addEventListener("touchstart", function (ev) {
         ev.preventDefault()
       })
+      document.addEventListener("touchend", function (ev) {
+        ev.preventDefault()
+      })
       const getA = document.querySelectorAll("a")
       for (let i = 0; i < getA.length; i++) {
         getA[i].addEventListener("touchstart", function (ev) {
