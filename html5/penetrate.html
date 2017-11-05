@@ -16,7 +16,7 @@
   <script type="text/javascript">
   const getA=document.querySelectorAll("a")
   const getDiv=document.querySelector("div")
-  for(var i=0; i<getA.length; i++){
+  for(var i=0; i<getA.length; i++){  //这里注意使用的是var，因为let在移动端支持度还不够，尤其是基于X5的QQ浏览器
     getA[i].addEventListener("click",function(e){
       e.preventDefault()
     })
