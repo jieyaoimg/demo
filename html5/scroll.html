@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <style type="text/css">
@@ -10,7 +10,8 @@
   html{height: 100%}
   body{height: 100%}
   .wrap{position:relative; width: 100%; height:100%; overflow: hidden}
-  .scroll{position: absolute; left:0; top: 0; width: 100%; height: 100%}
+  .scroll{position: absolute; left:0; top: 0; width: 100%;}
+  li{width:50%}
   </style>
 </head>
 <body>
@@ -75,14 +76,19 @@
   getWrap.addEventListener("touchmove",function(e){
     e.preventDefault()
   })
-  var startY,scrollOffsetTop,nowY
+  var startY,startOffsetTop,endY
   getWrap.addEventListener("touchstart",function(e){
     startY=e.changedTouches[0].pageY
     startOffsetTop=getScroll.offsetTop
   })
   getWrap.addEventListener("touchmove",function(e){
-    nowY=e.changedTouches[0].pageY
-    getScroll.style.top=startOffsetTop+nowY-startY+"px"
+    endY=e.changedTouches[0].pageY
+    getScroll.style.top=startOffsetTop+endY-startY+"px"
+    if(getScroll.offsetTop>0){
+      getScroll.style.top=0
+    }else if(getScroll.offsetTop<getWrap.offsetHeight-getScroll.offsetHeight){
+      getScroll.style.top=getWrap.offsetHeight-getScroll.offsetHeight+"px"
+    }
   })
   </script>
 </body>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,CAAC,CAAA;EAAC,KAAK,EADA,OAAO;EACE,SAAS,EAAC,cAAc,CAAC,QAAQ,CAAC,qBAAsB;CAAE",
+    "sources": [
+        "viewport.scss"
+    ],
+    "names": [],
+    "file": "viewport.css"
+}
