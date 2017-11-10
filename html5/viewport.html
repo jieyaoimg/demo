@@ -20,15 +20,38 @@
     p {
       font:.48rem/.533333rem microsoft yahei;
     }
+    p:-webkit-full-screen{
+      color:#000;
+      border:10px solid green
+    }
+    h3{color:rgb(122, 17, 243); font-size:50px; border: 1px solid #ddd; background: #eee} 
+    h3:-webkit-full-screen{
+      color:#000;
+      border:10px solid green
+    }
   </style>
   <link rel="stylesheet" href="viewport.css"/>
-  <script type="text/javascript">
-    console.log(document.documentElement.clientWidth)
-  </script>
 </head>
 
 <body>
-  <p>我是段落</p>
+  <p>我是段落</p>      
+  <script type="text/javascript">
+    console.log(document.documentElement.clientWidth)
+    const getP=document.querySelector("p")
+    var a=1
+    getP.addEventListener("click",function(e){
+      if(a){
+        this.webkitRequestFullscreen()  //getP进入全屏，requestFullscreen()可以用在各种元素上
+        a=0
+      }else{
+        document.webkitExitFullscreen() //getP退出全屏，exitFullscreen()只能用在document上
+        a=1
+      }
+    })
+    getP.addEventListener('webkitfullscreenchange', function(){
+      console.log(document.webkitFullscreenElement)   //当getP触发fullscreenchange事件（进入或退出全屏）时，返回当前处于全屏模式的DOM元素
+    })
+  </script>
 </body>
 
 </html>
