@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <title>Document</title>
+  <script type="text/javascript">
+    (function flexible(window, document) {
+      var docEl = document.documentElement
+      var dpr = window.devicePixelRatio || 1
+
+      // adjust body font size
+      function setBodyFontSize() {
+        if (document.body) {
+          document.body.style.fontSize = (12 * dpr) + 'px'
+        } else {
+          document.addEventListener('DOMContentLoaded', setBodyFontSize)
+        }
+      }
+      setBodyFontSize();
+
+      // set 1rem = viewWidth / 10
+      function setRemUnit() {
+        var rem = docEl.clientWidth / 10
+        docEl.style.fontSize = rem + 'px'
+      }
+
+      setRemUnit()
+
+      // reset rem unit on page resize
+      window.addEventListener('resize', setRemUnit)
+      window.addEventListener('pageshow', function (e) {
+        if (e.persisted) {
+          setRemUnit()
+        }
+      })
+
+      // detect 0.5px supports
+      if (dpr >= 2) {
+        var fakeBody = document.createElement('body')
+        var testElement = document.createElement('div')
+        testElement.style.border = '.5px solid transparent'
+        fakeBody.appendChild(testElement)
+        docEl.appendChild(fakeBody)
+        if (testElement.offsetHeight === 1) {
+          docEl.classList.add('hairlines')
+        }
+        docEl.removeChild(fakeBody)
+      }
+    }(window, document))
+  </script>
+  <style type="text/css">
+    p {
+      font: .48rem/.533333rem microsoft yahei;
+      color:#ab0003;
+    }
+
+    p:-webkit-full-screen {
+      border: 10px solid green;
+    }
+  </style>
+  <link rel="stylesheet" href="viewport.css" />
+</head>
+
+<body>
+  <p>我是段落</p>
+  <script type="text/javascript">
+    console.log(document.documentElement.clientWidth)
+    const getP = document.querySelector("p")
+    var a = 1
+    getP.addEventListener("click", function (e) {
+      if (a) {
+        this.webkitRequestFullscreen() //getP进入全屏，requestFullscreen()可以用在各种元素上
+        a = 0
+      } else {
+        document.webkitExitFullscreen() //getP退出全屏，exitFullscreen()只能用在document上
+        a = 1
+      }
+    })
+    getP.addEventListener('webkitfullscreenchange', function () {
+      console.log(document.webkitFullscreenElement) //当getP触发fullscreenchange事件（进入或退出全屏）时，返回当前处于全屏模式的DOM元素
+    })
+    
+  </script>
+</body>
+
+</html>

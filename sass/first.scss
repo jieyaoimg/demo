@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%;
+}
+
+.news-list {
+  padding: 1rem;
+  h3{
+    font: 1.6rem/3.0rem microsoft yahei;
+  }
+}
+
+#context a%extreme {  //编译后%extreme会被替换为.notice
+  color: blue;
+  font-weight: bold;
+  font-size: 2em;
+}
+.notice {
+  @extend %extreme;
+}
+
+
+.parent {
+  background: #eee;
+  @at-root .child {
+    background: #ddd;
+  }
+}
