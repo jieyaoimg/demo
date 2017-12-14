@@ -1,4 +1,4 @@
-var glob = require('glob');
+var glob = require('glob'); // 用于匹配路径的模块
 var dirVars = require('./dir-vars.config.js');
 var options = {
   cwd: dirVars.pagesDir, // 在pages目录里找
