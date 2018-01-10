@@ -25,7 +25,7 @@ let pluginsArr=[ //webpack的插件配置
   }),
   new CleanWebpack(['dist']), //慎用，在构建打包的时候会先自动清理指定文件夹
   new ExtractTextPlugin({ // 将所有的入口 chunk中引用的 *.css，移动到各自独立分离的 CSS 文件（注意：一个入口生成一个css）    
-    filename:'css/[name]-[contenthash].css', // 设置生成css文件的路径和名称， [name]是入口的名称，[contenthash]是生成的css文件的hash
+    filename:'static/css/[name]-[contenthash].css', // 设置生成css文件的路径和名称， [name]是入口的名称，[contenthash]是生成的css文件的hash
     allChunks: true  // 在某些情况下，不设置此项，打包后生成的代码运行时会报错
   }),
   new HtmlWebpackPlugin({  // view文件夹下的模板已经用HtmlWebpackPlugin批量处理了，这里，需要手动对其他文件夹里的一些组件/第三方插件等的模板这样一个个new,
@@ -62,10 +62,10 @@ module.exports = {
     about: path.resolve(__dirname, './src/js/page/about.js') //入口3
   },
   output: {
-    path: path.resolve(__dirname, 'dist'), //出口路径
+    path: path.resolve(__dirname, 'dist/'), //出口路径
     publicPath: '/', //生成的js/css/img等资源会以publicPath路径为标准加载到html中。
-    filename: 'js/[name]-[chunkhash].js', //出口文件名,有几个入口文件就会解析出几个出口文件，[name]会自动解析成每个入口文件的属性名,[chunkhash]是hash值。
-    chunkFilename: 'js/chunk-[id]-[chunkhash].js' //设置非入口文件的名称，前提是如果你的项目中使用了基于CommonJS的异步加载语句：require.ensure()。如果没有使用那么此句无效。
+    filename: 'static/js/[name]-[chunkhash].js', //出口文件名,有几个入口文件就会解析出几个出口文件，[name]会自动解析成每个入口文件的属性名,[chunkhash]是hash值。
+    chunkFilename: 'static/js/chunk-[id]-[chunkhash].js' //设置非入口文件的名称，前提是如果你的项目中使用了基于CommonJS的异步加载语句：require.ensure()。如果没有使用那么此句无效。
   },
   // externals: {
   //       jquery: 'jquery' //设置jquery不被打包
@@ -114,7 +114,7 @@ module.exports = {
           loader: 'url-loader',
           options: {
             limit: 4096, // 图片小于4K会被转成base64
-            name: 'images/[hash].[ext]' // 设置路径和文件名，[ext]是对应文件的扩展名，[hash]是内容的hash值
+            name: 'static/images/[hash].[ext]' // 设置路径和文件名，[ext]是对应文件的扩展名，[hash]是内容的hash值
           }
         }]
       },
@@ -122,7 +122,7 @@ module.exports = {
         test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
         loader: 'file-loader',
         options: {
-          name: 'font/[hash].[ext]' // 设置字体的路径和文件名，[hash]是内容的hash值
+          name: 'static/font/[hash].[ext]' // 设置字体的路径和文件名，[hash]是内容的hash值
         }
       }
     ]

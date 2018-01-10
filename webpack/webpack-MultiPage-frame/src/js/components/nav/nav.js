@@ -1,4 +1,4 @@
-const navHtml=require('./nav.html')
+const navHtml=require('./template/nav.html')
 const navScss=require('./css/nav.scss')
 module.exports=function(){
   /* eslint-disable no-undef */

@@ -15,7 +15,7 @@ module.exports =merge(common, { // webpack-merge插件合并webpack配置文件�
     new webpack.HotModuleReplacementPlugin(), //调用webpack的内置热更新插件
     new webpack.optimize.CommonsChunkPlugin({
       name: 'common', //公共模块的name属性值，可以通过[name]调用
-      filename: 'js/[name]-[hash].js',    //公共模块的路径和名称。注意：这里使用的是hash而不是chunkhash，因为chunkhash和热更新插件new webpack.HotModuleReplacementPlugin()冲突，不能同时存在。
+      filename: 'static/js/[name]-[hash].js',    //公共模块的路径和名称。注意：这里使用的是hash而不是chunkhash，因为chunkhash和热更新插件new webpack.HotModuleReplacementPlugin()冲突，不能同时存在。
       minChunks: 3 //设置至少多少个入口文件都包含的代码块才能写入公共模块中，这里Infinity代表无穷大，表示必须每个入口文件都有的代码块才能写入
     })
   ]

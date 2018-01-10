@@ -1,7 +1,7 @@
 .nav {
   width: 100%;
   font: 20px/40px microsoft yahei;
-  background: #333 url("../images/dog-ico.png") no-repeat left center;
+  background: #333 url("../images/nav-ico-dog.png") no-repeat left center;
   padding-left: 25px;
   overflow: hidden;
 }
