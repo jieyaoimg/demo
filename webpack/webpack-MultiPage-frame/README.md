@@ -1,16 +1,16 @@
-# webpack-template
+# 项目介绍
 
-> A webpack project
+> webpack-MultiPage-frame是一个webpack传统多页框架，基于webpack3
 
-## Build Setup
+## 使用说明
 
 ``` bash
-# install dependencies
+# 安装依赖
 npm install
 
-# serve with hot reload at localhost:8080
+# 启动开发环境
 npm run dev
 
-# build for production with minification
+# 打包
 npm run build
 ```
