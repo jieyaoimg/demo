@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+var student={
+  _age:20
+}
+Object.defineProperty(student,"age",{
+  get:function(){
+    return this._age;
+  },
+  set:function(newValue){ //此处的newValue参数是age属性的值
+    this._age=newValue+10
+  }
+})
+student.age=100;
+console.log(student.age) //输出110
+
+Object.defineProperties(student,{ //一次定义多个属性及其特性
+  height:{
+    value:178
+  },
+  address:{
+    value:"anhui"
+  }
+})
+console.log(student.address)
+console.log(Object.getOwnPropertyDescriptor(student,"height")) //注意这里的属性有双引号
+
+
+</script>
+</body>
+</html>

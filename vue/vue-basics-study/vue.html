@@ -32,6 +32,7 @@
     <template v-if="">
         <h3>标题三</h3>
     </template>
+    <input type="text" v-model="name"/>
 </div>
 <script>
 Vue.filter('reverse',function (value,argument01) {
@@ -44,7 +45,13 @@ new Vue({
     el:'#reg',
     data:{
         orfont:true,
-        mes:'hello world'
+        mes:'hello world',
+        name:'tom'
+    },
+    watch:{
+        name:function(){ //当属性name发生变化时，执行后面的函数
+            this.mes="名字变了"
+        }
     }
 })
 </script>

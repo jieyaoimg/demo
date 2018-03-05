@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<div class="news-conponent">
+    <div class="newslist">
+        <h3>资讯</h3>
+        <ul>
+            <li v-on:click="say(1,$event)">按钮</li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    new Vue({
+        el:'.news-conponent',
+        data: {
+            numbers: [ 1, 2, 3, 4, 5 ]
+        },
+        methods: {
+          say:function(a,ev){
+            console.log(a+1)
+            console.log(ev.clientX)
+          }
+        }
+    })
+</script>
+
+</body>
+</html>

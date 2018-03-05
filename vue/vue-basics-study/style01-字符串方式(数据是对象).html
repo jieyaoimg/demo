@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cssreset.css" type="text/css"/>
+    <link rel="stylesheet" href="bs/css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="bs/js/bootstrap.js" type="text/css"/>
+    <style type="text/css">
+        .font{font:bold 20px/40px "Microsoft YaHei"}
+        .text-danger{color:red;}
+        .bor{border:3px solid #ddd; padding: 20px; text-align: center;}
+    </style>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<p :style="isfont">锄禾日当午</p>
+<script>
+new Vue({
+  el:'p',
+  data:{
+    isfont:{
+      font:'bold 20px/40px "Microsoft YaHei"'
+    }
+  }
+})
+</script>
+</body>
+</html>

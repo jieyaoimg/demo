@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <ul>
+        <li class="newsli">按钮</li>
+    </ul>
+    <script type="text/javascript">
+        window.onload=function(){
+            function say(e,b){
+                console.log(e.clientX)
+                console.log(b)
+            }
+            document.querySelector(".newsli").onclick=function(e){ //1：先触发一个只有一个参数的方法，
+                say(e,10) //2：再在该方法里触发另一个封装好的多参数方法，多个参数的赋值是在此行设置的
+            }
+        }  
+    </script>
+</body>
+</html>
