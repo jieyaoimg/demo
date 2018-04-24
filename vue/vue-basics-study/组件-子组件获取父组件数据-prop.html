@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<div class="form">
+    <child-component mes="log"></child-component>   <!--给mes绑定一个静态字符串，这种方式并不涉及到父子组件间的通信-->
+    <child-component v-bind:mes="log"></child-component>   <!--给mes绑定一个父组件的data-->
+</div>
+<script type="text/javascript">
+    new Vue({
+        el:'.form',
+        data: {
+            log:'你好么'
+        },
+        components: {
+            'child-component':{
+                props:['mes'], //此处定义一个mes，作为中转，用于接收父组件的数据，props可以是数组也可以是对象，具体见下面的prop验证小节
+                computed:{
+                  getmes:function(){
+                    return this.mes.split('')  //可以通过计算属性或方法对prop进行处理
+                  }
+                },
+                template: '<h2>我是子组件--{{mes}}--{{getmes}}</h2>'
+            }
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+</head>
+
+<body>
+    <div class="form">
+        <button v-on:click="getChildName">获取子组件数据</button>
+        <button v-on:click="getCurrentHtml">获取当前组件数据</button>
+        <h1>{{newname}}</h1>
+        <p ref="curP">我是当前组件p标签内容</p>
+        <currency-input ref="childComp"></currency-input>
+    </div>
+    <script type="text/javascript">
+      Vue.component('currency-input',{
+          template:'<p>{{name}}</p>',
+          data:function(){
+              return{
+                  name:'tom'
+              }
+          }
+      })
+      new Vue({
+          el:'.form',
+          data:{
+              newname:'空'
+          },
+          methods:{
+              getChildName:function(){
+                  this.newname=this.$refs.childComp.name
+              },
+              getCurrentHtml:function(){
+                  this.newname=this.$refs.curP.innerHTML
+              }
+          }
+
+      })
+    </script>
+</body>
+
+</html>

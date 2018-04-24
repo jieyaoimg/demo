@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+</head>
+
+<body>
+    <div class="newslist">
+        <list-component v-bind:mes='parentlist'>
+            <!--
+            （2）通过scope="自定义属性值"可以接收到第一步发射过来的属性geti
+                template不会被渲染出来，由于scope只能用在template标签上，所以此处使用了template
+                Vue 2.5版本后改为slot-scope，能被用在任意元素或组件中，所以不需要再使用template
+            --> 
+            <template slot="slotlist" scope="scopeobj">  
+                    <p>{{scopeobj.geti}}</p> <!--（3）调用数据--> 
+            </template>
+        </list-component>
+    </div>
+    <script type="text/javascript">
+        Vue.component('list-component',{
+            template:'\
+                    <ul>\
+                        <slot name="slotlist" v-for="i in mes" :geti="i.con"></slot>\
+                    </ul>',  //（1）对slot标签进行循环，并且把循环里的参数‘ i ’通过自定义属性geti发射出去
+            data:function(){
+                return {
+                }
+            },
+            props:['mes']
+        })
+
+        new Vue({
+            el:'.newslist',
+            data:{
+                parentlist:[{con:"床前明月光"},{con:"疑是地上霜"},{con:"举头望明月"},{con:"低头思故乡"}]
+            }
+        })
+    </script>
+</body>
+
+</html>

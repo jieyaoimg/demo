@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+</head>
+
+<body>
+    <div class="form">
+        <h1>{{parentData}}</h1>
+        <child-component class='childH1' v-on:diyemit='getChildData' v-on:mousewheel.native='changeFont'></child-component>
+        <!--（3）通过v-on:获取子组件发射过来的自定义事件名和数据，注意v-on:必须放在父组件模板里的子组件名称标签上，如果子组件<child-component></child-component>上想要绑定原生事件如click等,需要给该事件添加修饰符.native。-->
+    </div>
+    <script type="text/javascript">
+        new Vue({
+            el: '.form',
+            data: {
+                parentData: '我是parentData'
+            },
+            methods: {
+                getChildData: function (a) { //（4）第一个参数是子组件发射过来的数据
+                    this.parentData = a.childData;//（5）把获取的子组件数据赋值到父组件数据上
+                },
+                changeFont:function(event){
+                    let getFont=document.querySelector('.childH1').style.fontSize;
+                    if(!getFont){
+                        document.querySelector('.childH1').style.fontSize='32px'
+                    }
+                    if(event.wheelDelta>0){
+                        document.querySelector('.childH1').style.fontSize=parseInt(document.querySelector('.childH1').style.fontSize)+2+'px'
+                    }else{
+                        document.querySelector('.childH1').style.fontSize=parseInt(document.querySelector('.childH1').style.fontSize)-2+'px'
+                    }
+                }
+            },
+            components: {
+                'child-component': {
+                    template: '<h1 v-on:click="emitData">{{childData}}</h1>', //（1）触发子组件的emitData方法
+                    data: function () {
+                        return {
+                            childData: '我是childData'
+                        }
+                    },
+                    methods: {
+                        emitData: function () {
+                            this.$emit('diyemit', {
+                                childData: this.childData
+                            }) //（2）发射子组件的自定义事件和数据。此处的数据结构是对象格式，childData是自定义变量名，this.childData是子组件的data里定义的数据。其实也可以直接传个变量格式的数据过去，如：this.childData
+                        }
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
