@@ -20,4 +20,10 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+/* img{animation: img 2s infinite alternate}
+@keyframes img {
+  0%{width: 100px}
+  50%{width:200px}
+  100%{width:300px}
+} */
 </style>
