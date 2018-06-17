@@ -1,7 +1,17 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <router-view/>
+    <router-link to='floder'>floder</router-link>
+    <router-link to='Mixins01'>Mixins01</router-link>
+    <router-link to='HooksTransition'>HooksTransition</router-link>
+    <router-link to='StateMapState'>StateMapState</router-link>
+    <router-link to='GettersMapgetters'>GettersMapgetters</router-link>
+    <router-link to='MutationsMapmutations'>MutationsMapmutations</router-link>
+    <router-link to='ActionsMapactions'>ActionsMapactions</router-link>
+    <router-link to='StoreModulesDemo'>StoreModulesDemo</router-link>
+    <transition name="fade">
+      <router-view class="fade"/>
+    </transition>
   </div>
 </template>
 
@@ -20,10 +30,9 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-/* img{animation: img 2s infinite alternate}
-@keyframes img {
-  0%{width: 100px}
-  50%{width:200px}
-  100%{width:300px}
-} */
+#app a{padding: 5px 10px; border: 1px solid #ab0003; font: 16px/40px microsoft yahei;}
+.router-link-active{background: #ab0003}
+.fade-enter{opacity: 0}
+.fade-enter-active{transition: all 2s}
+.fade-enter-to{opacity: 1}
 </style>

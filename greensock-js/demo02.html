@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="./src/uncompressed/TweenMax.js"></script>
+  <style>
+    .box01,
+    .box02,
+    .box03,
+    .box04,
+    .box05 {
+      width: 100px;
+      height: 100px;
+      background: #ab0003;
+      margin: 0 auto
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box01"></div>
+  <div class="box02"></div>
+  <div class="box03"></div>
+  <div class="box04"></div>
+  <script>
+    const tl = new TimelineLite();
+    tl.from(".box01", 1, {
+      y: "-=110px",
+      opacity: 0
+    }).from(".box02", 1, {
+      x: "+=110px",
+      opacity: 0
+    }, "-=0.7").from(".box03", 1, {
+      y: "+=110px",
+      opacity: 0
+    }, "-=0.7").from(".box04", 1, {
+      x: "-=110px",
+      opacity: 0
+    }, "-=0.7")
+
+
+  </script>
+</body>
+
+</html>

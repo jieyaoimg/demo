@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="./src/uncompressed/TweenMax.js"></script>
+  <style>
+    .box01 {
+      width: 100px;
+      height: 100px;
+      background: #ab0003
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box01"></div>
+  <script>
+    let obj = {
+      a: 01
+    };
+    TweenMax.to(obj, 2, { //目标必须是对象
+      a: 20, //设置数据目标值
+      onUpdate: function () { //动画运动的每一帧，都会执行该函数一次
+        document.querySelector('.box01').innerHTML = obj.a
+      },
+      roundProps: 'a' //对数据进行四舍五入
+    })
+    TweenMax.to('.box01', 2, {
+      borderRadius: '50px', //驼峰格式
+      x: '300px', // x,y分别代表transform的translateX和translateY，这里我发现300px和300都能正常运行，
+      y: 300,
+      opacity: .5,
+      delay: 2
+    });
+  </script>
+</body>
+
+</html>
