@@ -1,4 +1,6 @@
-@charset "utf-8";
+/*
+使用方式：在HTML中直接添加class即可
+*/
 .border,
 .border-top,
 .border-right,
@@ -33,10 +35,9 @@
     overflow: hidden;
     position: absolute;
 }
-/* border
- * 因，边框是由伪元素区域遮盖在父级
- * 故，子级若有交互，需要对子级设置
- * 定位 及 z轴
+/* 因边框是由伪元素区域遮盖在父级
+ * 故子级若有交互，需要对子级设置
+ * 定位及z轴
  */
 .border::before {
     box-sizing: border-box;
@@ -44,7 +45,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    border: 1px solid #eaeaea;
+    border: 1px solid #888;
     transform-origin: 0 0;
 }
 .border-top::before,
@@ -75,28 +76,28 @@
 .border-topbottom::before,
 .border-topleft::before,
 .border-topright::before {
-    border-top: 1px solid #eaeaea;
+    border-top: 1px solid #888;
     transform-origin: 0 0;
 }
 .border-right::before,
 .border-rightbottom::before,
 .border-rightleft::before,
 .border-topright::after {
-    border-right: 1px solid #eaeaea;
+    border-right: 1px solid #888;
     transform-origin: 100% 0;
 }
 .border-bottom::before,
 .border-topbottom::after,
 .border-rightbottom::after,
 .border-bottomleft::before {
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 1px solid #888;
     transform-origin: 0 100%;
 }
 .border-left::before,
 .border-topleft::after,
 .border-rightleft::after,
 .border-bottomleft::after {
-    border-left: 1px solid #eaeaea;
+    border-left: 1px solid #888;
     transform-origin: 0 0;
 }
 .border-top::before,
