@@ -1,6 +1,5 @@
 .DS_Store
 node_modules/
-dist/
 vue-other-demo/
 phpMyAdmin/
 npm-debug.log*
