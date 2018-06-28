@@ -28,7 +28,13 @@ export default {
   data () {
     return {
       lastCity: '',
-      swiperList: [],
+      swiperList: [{
+        id: '0001',
+        imgUrl: 'https://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/291735.jpg'
+      }, {
+        id: '0002',
+        imgUrl: 'https://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/291429.jpg'
+      }],
       iconList: [],
       recommendList: [],
       weekendList: []

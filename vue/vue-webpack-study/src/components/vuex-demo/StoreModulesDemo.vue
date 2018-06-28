@@ -17,6 +17,9 @@ export default {
   computed: {
 
   },
+  activated () {
+    console.log('如果你看到我，说明我被keep-alive缓存了')
+  },
   methods: {
     ...mapMutations(['add']),
     ...mapActions({
