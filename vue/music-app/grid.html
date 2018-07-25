@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keyword" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes"><!-- 移动端属性值，IOS和Android都支持，设置当前页面全屏显示，不显示浏览器边框，不过该属性值只对加入搜藏的网站起作用 -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css">
+    .container {
+      margin-bottom: 20px;
+      width: 100%;
+      display: grid;
+    }
+    .item {
+      background: #ddd;
+      border: 2px solid #ab0003;
+    }
+    .container1 {
+      grid-template-columns: 1fr 40% 2fr;
+      grid-template-rows: 100px 100px 100px 100px;
+      grid-auto-flow: column 
+    }
+    .container1 .item01 {
+      grid-row: 1/4;
+    }
+    .container1 .item02 {
+      grid-column: 2/4;
+    }
+    .container2 {
+      grid-template-columns: [col-01] 20% [col-02] auto [col-03 col-03-01] 20% [col-04];
+      grid-template-rows: 100px 300px 100px;
+      grid-template-areas:
+        "header header header"
+        "bar content content"
+        "footer footer footer";
+      grid-gap: 10px 20px; /**行网格线10px,列网格线20px**/
+    }
+    .container2 .item01 {
+      grid-area: header
+    }
+    .container2 .item02 {
+      grid-area: bar
+    }
+    .container2 .item03 {
+      grid-area: content
+    }
+    .container2 .item04 {
+      grid-area: footer
+    }
+    .container3 {
+      width: 700px;
+      text-align: center;
+      color: #ab0003;
+      grid: 
+        [row01-start] "header header header" 100px [row1-end]
+        [row02-start] "left right right" 200px [row02-end]
+        [row03-start] "footer footer footer" 100px [row03-end]
+        / [col01] 100px [col02] 150px [col03] 150px [col04];
+    }
+    .container3 .item01 {
+      grid-area: header;
+    }
+    .container3 .item02 {
+      grid-area: left;
+    }
+    .container3 .item03 {
+      grid-area: right;
+    }
+    .container3 .item04 {
+      grid-area: footer;
+    }
+    .container3 .item05 {
+      background: rgb(153, 197, 255);
+      border-color: rgb(8, 74, 134);
+      grid-area: header-start / 1 / left-end / 2;
+    }
+    .container4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-template-rows: repeat(auto-fit, 100px);
+      grid-auto-rows: 100px
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container container1">
+      <div class="item item01">1</div>
+      <div class="item item02">2</div>
+      <div class="item item03">3</div>
+      <div class="item item04">4</div>
+      <div class="item item05">5</div>
+      <div class="item item06">6</div>
+      <div class="item item07">7</div>
+      <div class="item item08">8</div>
+      <div class="item item09">9</div>
+      <div class="item item09">10</div>
+  </div>
+  <div class="container container2">
+      <div class="item item01">header</div>
+      <div class="item item02">bar</div>
+      <div class="item item03">content</div>
+      <div class="item item04">footer</div>
+  </div>
+  <div class="container container3">
+      <div class="item item01">111</div>
+      <div class="item item02">222</div>
+      <div class="item item03">333</div>
+      <div class="item item04">444</div>
+      <div class="item item05">555</div>
+  </div>
+  <div class="container container4">
+    <div class="item item01">1</div>
+    <div class="item item02">2</div>
+    <div class="item item03">3</div>
+    <div class="item item04">4</div>
+    <div class="item item05">5</div>
+    <div class="item item06">6</div>
+    <div class="item item07">7</div>
+    <div class="item item08">8</div>
+    <div class="item item09">9</div>
+    <div class="item item09">10</div>
+</div>
+<script>
+  let arr = [1, 2, 3, 4]
+  console.log([1, 2, 3, 4].fill(888)) /* 输出数组[888,888,888,888] */
+</script>
+</body>
+
+</html>

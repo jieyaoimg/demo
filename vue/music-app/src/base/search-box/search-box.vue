@@ -18,7 +18,7 @@
     },
     data() {
       return {
-        query: ''
+        query: '111'
       }
     },
     methods: {
