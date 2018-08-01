@@ -128,9 +128,26 @@
     <div class="item item09">9</div>
     <div class="item item09">10</div>
 </div>
+
+<div id="demo"></div>
+<input type="text" id="inp">
 <script>
-  let arr = [1, 2, 3, 4]
-  console.log([1, 2, 3, 4].fill(888)) /* 输出数组[888,888,888,888] */
+  var obj = {}
+  var demo = document.querySelector('#demo')
+  var inp = document.querySelector('#inp')
+  Object.defineProperty(obj, 'name', { // 看起来数据name只是作为数据中转的作用，真正要更新到view层的数据操作在set方法里。
+    get: function() {
+      return 0
+    },
+    set: function (newVal) {
+      inp.value = newVal
+      demo.innerHTML = newVal
+    }
+  })
+  inp.addEventListener('input', function(e) {
+    obj.name = e.target.value  // 给obj的name属性赋值，进而触发该属性的set方法,
+  })
+  obj.name = 'fei'// 在给obj设置name属性的时候，触发了set这个方法
 </script>
 </body>
 
