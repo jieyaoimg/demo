@@ -14,13 +14,12 @@
 //     return (
 //       <div>
 //         <p ref={this.list} onClick={this.handleChange}>我是P标签内容</p>{/**(2)把this.list关联到react元素的ref属性上**/}
-//       </div> 
+//       </div>
 //     )
 //   }
 // }
 
 // export default RefsDemo
-
 
 // import React from 'react';
 
@@ -37,13 +36,12 @@
 //     return (
 //       <div>
 //         <p ref={(ele)=>{this.tit = ele}} onClick={this.handleChange}>我是P标签内容</p>{/**(1)回调函数接收当前DOM元素作为参数，并把它赋值到react的实例属性上**/}
-//       </div> 
+//       </div>
 //     )
 //   }
 // }
 
 // export default RefsDemo
-
 
 // import React from 'react';
 
@@ -63,44 +61,50 @@
 //     return (
 //       <div>
 //         <p ref={this.getRef} onClick={this.handleChange}>我是P标签内容</p>
-//       </div> 
+//       </div>
 //     )
 //   }
 // }
 
 // export default RefsDemo
 
-
-import React from 'react';
+import React from "react";
 
 class RefsDemo extends React.Component {
   constructor(props) {
-    super(props)
-    this.state = {
-    }
-    this.inputText = React.createRef()
-    this.inputCheck = React.createRef()
+    super(props);
+    this.state = {};
+    this.inputText = React.createRef();
+    this.inputCheck = React.createRef();
   }
-  handleSubmit = (e)=>{
-    console.log(this.inputText.current.value)
-    e.preventDefault()//阻止默认事件：提交表单跳转新页面
-  }
-  handleChange = (e)=>{//你可以在事件中对用户输入的数据进行一些验证或是其它别的你想做的操作
-    console.log(this.inputText.current.value)
-  }
+  handleSubmit = e => {
+    console.log(this.inputText.current.value);
+    e.preventDefault(); //阻止默认事件：提交表单跳转新页面
+  };
+  handleChange = e => {
+    //你可以在事件中对用户输入的数据进行一些验证或是其它别的你想做的操作
+    console.log(this.inputText.current.value);
+  };
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>{/*handleSubmit事件也不是必须的*/}
-        <input type='text' defaultValue='888' onChange={this.handleChange} ref={this.inputText}/> {/*表单控件的状态值存储在自身DOM属性上。这里的onChange和ref都不是必须的，甚至defaultValue也不是必须的*/}
-        <input type='checkbox' defaultChecked ref={this.inputCheck}/>
-        <select defaultValue='shanghai'>
-          <option value='beijing'>北京</option>
-          <option value='shanghai'>上海</option>
+      <form onSubmit={this.handleSubmit}>
+        {/*handleSubmit事件也不是必须的*/}
+        <input
+          type="text"
+          defaultValue="888"
+          onChange={this.handleChange}
+          ref={this.inputText}
+        />{" "}
+        {/*表单控件的状态值存储在自身DOM属性上。这里的onChange和ref都不是必须的，甚至defaultValue也不是必须的*/}
+        <input type="checkbox" defaultChecked ref={this.inputCheck} />
+        <select defaultValue="shanghai">
+          <option value="beijing">北京</option>
+          <option value="shanghai">上海</option>
         </select>
-        <button>提交</button>
-      </form> 
-    )
+        <button>提交</button> 
+      </form>
+    );
   }
 }
 
-export default RefsDemo
+export default RefsDemo;

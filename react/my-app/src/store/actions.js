@@ -1,22 +1,8 @@
-export const ADD_TODO = 'ADD_TODO';
-export const TOGGLE_TODO = 'TOGGLE_TODO'
-export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER'
+export const CHANGE_INPUT_VALUE = 'CHANGE_INPUT_VALUE';
 
-export function addTodo(text) {
+export function changeIputValue(value) {
   return {
-    type: ADD_TODO,
-    text
-  }
-}
-export function toggleTodo(index) {
-  return {
-    type: TOGGLE_TODO,
-    index
-  }
-}
-export function setVisibilityFilter(filter) {
-  return {
-    type: SET_VISIBILITY_FILTER,
-    filter
+    type: CHANGE_INPUT_VALUE,
+    value: value
   }
 }

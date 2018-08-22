@@ -1,32 +1,21 @@
 import {
-  ADD_TODO,
-  TOGGLE_TODO,
-  SET_VISIBILITY_FILTER,
-  VisibilityFilters
+  CHANGE_INPUT_VALUE
 } from './actions'
 
 const initialState = {
-  visibilityFilter: VisibilityFilters.SHOW_ALL,
-  todos: []
+  InputValue: "请输入",
+  data: [1111, 2222, 3333, 4444]
 };
 
-function todoApp(state = initialState, action) {
+const changeInputValue = (state = initialState, action) => {
   switch (action.type) {
-    case SET_VISIBILITY_FILTER:
+    case CHANGE_INPUT_VALUE:
       return Object.assign({}, state, {
-        visibilityFilter: action.filter
-      })
-    case ADD_TODO:
-      return Object.assign({}, state, {
-        todos: [
-          ...state.todos,
-          {
-            text: action.text,
-            completed: false
-          }
-        ]
+        InputValue: action.value
       })
     default:
       return state
   }
 }
+
+export default changeInputValue

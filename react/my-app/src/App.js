@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
 import Loadable from 'react-loadable'
+import ReduxForm from './components/ReduxForm.jsx'
 
 const Loading = () => <div>Loading...</div>;
 
@@ -38,6 +39,7 @@ class App extends Component {
                 <Link to='/Demo2' style={{color:'#fff', padding:'5px'}}>Demo2</Link>
                 <Link to='/RefsDemo' style={{color:'#fff', padding:'5px'}}>RefsDemo</Link>
                 <NavLink to='/slotparent' style={{color:'#fff', padding:'5px'}} activeStyle={{color: '#fff'}}>slotparent</NavLink>
+                <Link to='/ReduxForm' style={{color:'#fff', padding:'5px'}}>ReduxForm</Link>
               </div>
             </header>
             <Switch>
@@ -45,6 +47,7 @@ class App extends Component {
               <Route exact path='/Demo2' render={()=><Demo2 numbers={arr} ref={(e)=>{this.con = e}}></Demo2>}/>
               <Route exact path='/RefsDemo' component={RefsDemo}/>
               <Route exact path='/slotparent' component={SlotParent}/>
+              <Route exact path='/ReduxForm' component={ReduxForm}/>
             </Switch>
           </div>
         </BrowserRouter>

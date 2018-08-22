@@ -24,3 +24,7 @@ store.dispatch(setVisibilityFilter(VisibilityFilters.SHOW_COMPLETED))
 
 // 停止监听 state 更新
 unsubscribe();
+
+function (a) {
+  return a
+}
