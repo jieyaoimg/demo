@@ -19,8 +19,8 @@ export const getAjaxList = () =>{
   return (dispatch, state) => {
     axios.get('https://jieyaoimg.github.io/demo/react/my-app/src/api/list.json').then(
       (res)=>{
-        const data = res.data
-        console.log(JSON.parse(1))
+        const data = res.data.list
+        console.log(data)
       }
     )
   }
