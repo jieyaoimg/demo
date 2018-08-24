@@ -1,8 +1,7 @@
 import React from "react";
 import { Input, Button, List } from "antd";
 import store from "../store/index"
-import { changeIputValue, studentButtonAddList } from "../store/actions"
-import axios from "axios"
+import { changeIputValue, studentButtonAddList, getAjaxList } from "../store/actions"
 
 class ReduxForm extends React.Component {
   constructor(props) {
@@ -11,12 +10,7 @@ class ReduxForm extends React.Component {
     store.subscribe(this.HandleStateChange)
   }
   componentDidMount (){
-    axios.get('https://jieyaoimg.github.io/demo/react/my-app/src/api/list.json').then(
-      (res)=>{
-        const data = res
-        console.log(data.data)
-      }
-    )
+    store.dispatch(getAjaxList())
   }
   HandleStateChange = () => {
     this.setState(store.getState())

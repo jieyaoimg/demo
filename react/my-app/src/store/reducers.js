@@ -8,7 +8,7 @@ const initialState = {
   data: [1111, 2222, 3333, 4444]
 };
 
-const changeInputValue = (state = initialState, action) => {
+const reducers = (state = initialState, action) => {
   switch (action.type) {
     case CHANGE_INPUT_VALUE:
       return Object.assign({}, state, {
@@ -24,4 +24,4 @@ const changeInputValue = (state = initialState, action) => {
   }
 }
 
-export default changeInputValue
+export default reducers
