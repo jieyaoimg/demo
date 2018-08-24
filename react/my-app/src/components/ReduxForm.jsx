@@ -11,10 +11,10 @@ class ReduxForm extends React.Component {
     store.subscribe(this.HandleStateChange)
   }
   componentDidMount (){
-    axios.get('').then(
+    axios.get('https://jieyaoimg.github.io/demo/react/my-app/src/api/list.json').then(
       (res)=>{
         const data = res
-        console.log(data)
+        console.log(data.data)
       }
     )
   }
