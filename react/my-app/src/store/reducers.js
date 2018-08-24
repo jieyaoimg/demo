@@ -1,5 +1,6 @@
 import {
-  CHANGE_INPUT_VALUE
+  CHANGE_INPUT_VALUE,
+  STUDENT_BUTTON_ADD_LIST
 } from './actions'
 
 const initialState = {
@@ -13,6 +14,11 @@ const changeInputValue = (state = initialState, action) => {
       return Object.assign({}, state, {
         InputValue: action.value
       })
+    case STUDENT_BUTTON_ADD_LIST:
+      const newState = Object.assign({}, state)
+       newState.data.push(newState.InputValue)
+       newState.InputValue = ''
+       return newState
     default:
       return state
   }

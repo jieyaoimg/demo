@@ -1,13 +1,22 @@
 import React from "react";
 import { Input, Button, List } from "antd";
 import store from "../store/index"
-import { addList } from "../store/actions"
+import { changeIputValue, studentButtonAddList } from "../store/actions"
+import axios from "axios"
 
 class ReduxForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = store.getState()
     store.subscribe(this.HandleStateChange)
+  }
+  componentDidMount (){
+    axios.get('').then(
+      (res)=>{
+        const data = res
+        console.log(data)
+      }
+    )
   }
   HandleStateChange = () => {
     this.setState(store.getState())
@@ -16,7 +25,7 @@ class ReduxForm extends React.Component {
     store.dispatch(changeIputValue(e.target.value))
   };
   HandleButton = () => {
-    store.dispatch()
+    store.dispatch(studentButtonAddList())//我们知道dispatch提交的是action，所以这里studentButtonAddList必须带上(),因为它并不是action而是actions创建函数
   }
   render() {
     return (
