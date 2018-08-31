@@ -1,4 +1,4 @@
-'use strict';
+
 
 const autoprefixer = require('autoprefixer');
 const path = require('path');
@@ -127,6 +127,17 @@ module.exports = {
           },
         ],
         include: paths.appSrc,
+      },
+      {
+        test: /\.(js|jsx|mjs)$/,
+        include: paths.appSrc,
+        loader: require.resolve('babel-loader'),
+        options: {
+          cacheDirectory: true,
+          "plugins": [
+            ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }] // `style: true` 会加载 less 文件
+          ],
+        },
       },
       {
         // "oneOf" will traverse all following loaders until one will
