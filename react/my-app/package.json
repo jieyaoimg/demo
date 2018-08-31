@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jieyaoimg.github.io/demo/react/my-app/build/",
   "dependencies": {
     "antd": "^3.8.2",
     "autoprefixer": "7.1.6",
