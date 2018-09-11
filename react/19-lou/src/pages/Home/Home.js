@@ -1,11 +1,26 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import './Home.scss'
-
+import { handleValue } from './HomeActionReducer'
+import {withRouter} from "react-router-dom";
 class Home extends Component {
+  constructor(props){
+    super(props)
+    this.state={}
+  }
+  handleRoute = () => {
+    console.log('qaz')
+    // this.props.history.push('/yes')
+  }
   render(){
     return(
-      <h3 className='home-root'><p>3333</p>{this.props.value}</h3>
+      <div>
+        <h3 className='home-root' onClick={this.props.handleValue}>
+          <p>3333</p>
+          {this.props.value}
+        </h3>
+        <p onClick={this.props.handleRoute}>路由</p>
+      </div>
     )
   }
 }
@@ -16,7 +31,10 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = (dispatch) => {
   return {
-
+    handleValue(){
+      dispatch(handleValue(777))
+      window.scrollTo(0,0)
+    }
   }
 }
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Home))
