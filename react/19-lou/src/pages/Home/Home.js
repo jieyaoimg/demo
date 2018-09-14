@@ -9,8 +9,8 @@ class Home extends Component {
     this.state={}
   }
   handleRoute = () => {
-    console.log('qaz')
-    // this.props.history.push('/yes')
+    console.log(this.props.location)
+    this.props.history.push('/ok')
   }
   render(){
     return(
@@ -19,7 +19,7 @@ class Home extends Component {
           <p>3333</p>
           {this.props.value}
         </h3>
-        <p onClick={this.props.handleRoute}>路由</p>
+        <p onClick={this.handleRoute}>路由</p>
       </div>
     )
   }
