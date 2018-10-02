@@ -14,10 +14,13 @@
       </p>
     </div>
     <input type="text" value="请输入" />
+    <Form01></Form01>
   </div>
 </template>
 
 <script>
+import Form01 from './Form01.vue'
+
 export default {
   name: 'HelloWorld',
 
@@ -25,7 +28,8 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
-  }
+  },
+  components: {Form01}
 }
 
 </script>

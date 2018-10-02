@@ -1,0 +1,11 @@
+.header-root{border-bottom:1px solid #ddd; overflow: hidden}
+.header-root .nav .ant-menu{border:none;}
+.header-root .nav .ant-menu-item{height:56px; line-height: 56px;}
+@media screen and (max-width:768px){
+  .header-root .search-pc{display: none}
+}
+@media screen and (min-width:768px){
+  .header-root .search-mobile{display: none}
+}
+.header-root .nav-sub li{float:left; list-style: none; padding: 0 5px;}
+.ant-layout-header ul{margin:0}
