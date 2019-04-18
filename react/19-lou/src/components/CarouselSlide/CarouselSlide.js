@@ -1,21 +1,29 @@
-import React, { Component } from 'react';
-import './CarouselSlide.scss'
-import { connect } from 'react-redux'
-import { Carousel,Row,Col } from "antd";
+import React, { Component } from "react"
+import "./CarouselSlide.scss"
+import { connect } from "react-redux"
+import { Carousel, Row, Col } from "antd"
 
 class CarouselSlide extends Component {
-  constructor(props){
+  constructor(props) {
     super(props)
-    this.state={}
+    this.state = {}
   }
-  render(){
-    return(
-      <div className='carousel-root'>
+  render() {
+    return (
+      <div className="carousel-root">
         <Carousel autoplay>
-          <div><h3>1</h3></div>
-          <div><h3>2</h3></div>
-          <div><h3>3</h3></div>
-          <div><h3>4</h3></div>
+          <div>
+            <h3>1</h3>
+          </div>
+          <div>
+            <h3>2</h3>
+          </div>
+          <div>
+            <h3>3</h3>
+          </div>
+          <div>
+            <h3>4</h3>
+          </div>
         </Carousel>
         <Row>
           <Col span={12}>col-12</Col>
@@ -30,12 +38,13 @@ class CarouselSlide extends Component {
     )
   }
 }
-const mapStateToProps = (state) => {
-  return {
-  }
+const mapStateToProps = state => {
+  return {}
 }
-const mapDispatchToProps = (dispatch) => {
-  return {
-  }
+const mapDispatchToProps = dispatch => {
+  return {}
 }
-export default connect(mapStateToProps, mapDispatchToProps)(CarouselSlide)
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(CarouselSlide)
