@@ -33,6 +33,7 @@
       .border-1px-physics {
         position: relative;
       }
+      /* dpr=1时:*/
       .border-1px-physics::after {
         content: "";
         position: absolute;
@@ -41,13 +42,13 @@
         background: #333;
       }
       /* dpr>=2时:*/
-      @media screen and (-webkit-min-device-pixel-ratio: 2) {
+      @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
         .border-1px-physics::after {
           transform: scaleY(0.5);
         }
       }
       /* dpr>=3时:*/
-      @media screen and (-webkit-min-device-pixel-ratio: 3) {
+      @media screen and (-webkit-min-device-pixel-ratio: 3), (min-resolution: 2dppx) {
         .border-1px-physics::after {
           transform: scaleY(0.333);
         }
