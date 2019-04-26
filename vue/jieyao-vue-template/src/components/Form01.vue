@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <input type="text" placeholder="黑，请输入" v-model="newName">
+    <input type="text" placeholder="黑，请输入" v-model="newName"/>
     <p>{{ newName }}</p>
     <p>{{ old }}</p>
   </div>
@@ -31,4 +31,5 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import '@/assets/styles/varibles.scss';
+.hot-news{margin:0px;}
 </style>

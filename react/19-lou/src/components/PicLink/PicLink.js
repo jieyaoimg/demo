@@ -19,7 +19,7 @@ class PicLink extends Component {
   }
   render() {
     return (
-      <div className="PicLink-root">
+      <div className="piclink-root">
         <ul>
           <li>
             <a href="/" target="_blank">
