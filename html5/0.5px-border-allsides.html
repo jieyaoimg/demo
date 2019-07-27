@@ -10,26 +10,22 @@
       margin: 0;
       padding: 0;
     }
-
     body {
       width: 100%;
       margin: 0 auto;
       background: #ddd;
       border: 1px solid #ab0003;
     }
-
     .news {
       width: 44%;
       float: left;
       margin-right: 10px;
     }
-
-    
-    .border-1px-physics { /*border-1px-physics用在已经存在的DIV上*/
+    .border-1px-physics-allsides { 
       position: relative;
     }
     /* dpr=1时:*/
-    .border-1px-physics::after {
+    .border-1px-physics-allsides::after {
       content: '';
       position: absolute;
       left: 0;
@@ -40,18 +36,16 @@
       transform-origin: left top;
     }
     /* dpr>=2时:*/
-    @media (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 2dppx) {
-      .border-1px-physics::after {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      .border-1px-physics-allsides::after {
         width: 200%;
         height: 200%;
         transform: scale(0.5);
       }
     }
     /* dpr>=3时:*/
-    @media (-webkit-min-device-pixel-ratio: 3),
-    (min-resolution: 3dppx) {
-      .border-1px-physics::after {
+    @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
+      .border-1px-physics-allsides::after {
         width: 300%;
         height: 300%;
         transform: scale(0.333);
@@ -62,7 +56,7 @@
 
 <body>
   <h1>标题标题标题标题标题标题标题标题</h1>
-  <div class="news border-1px-physics">
+  <div class="news border-1px-physics-allsides">
     <ul>
       <li>我我我我我我我我我我我我我我我</li>
       <li>我我我我我我我我我我我我我我我</li>
@@ -73,7 +67,7 @@
       <li>我我我我我我我我我我我我我我我</li>
     </ul>
   </div>
-  <div class="news border-1px-physics">
+  <div class="news border-1px-physics-allsides">
     <ul>
       <li>我我我我我我我我我我我我我我我</li>
       <li>我我我我我我我我我我我我我我我</li>

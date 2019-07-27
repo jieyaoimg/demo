@@ -1,0 +1,67 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>github-0.5px-border </title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 100%;
+      margin: 0 auto;
+      background: #fff;
+    }
+    
+    .news {
+      display: flex;
+      justify-content: center;
+
+    }
+    .news ul {
+      padding:50px;
+      border: 2px solid #ab0003;
+ 
+      
+      /*当每一个圆角的X轴=Y轴时，用如下写法：*/
+      border-radius: 50px 100px 50px 100px; /*左上50，右上100，右下50，左下100*/
+      border-radius: 50px 100px 50px; /*左上50，右上100，右下50，左下100*/
+      border-radius: 50px 100px; /*左上50，右上100，右下50，左下100*/
+      border-radius: 50px; /*四个角都是50px*/
+      /*以上三种缩写的规则遵循左上=右下，右上=左下*/
+      
+     /*当每一个圆角的X轴和Y轴不相等时，用如下斜杠的写法，斜杠左侧是四个圆角的X轴半径，右侧是四个圆角的Y轴半径：*/
+     border-radius: 100px 100px 100px 100px/50px 50px 50px 50px; 
+     border-radius:100px/50px; /*当四个圆角的X轴(或Y轴)半径相等时，可以简写*/
+
+      /*也可以针对单个圆角设置其X和Y半径：*/
+      border-top-left-radius: 100px 40px;
+      border-top-right-radius: 40px 80px;
+      border-bottom-right-radius: 80px 40px;
+      border-bottom-left-radius: 100px 50px;
+    }
+    @media not (screen and (min-width: 700px)), handheld and (orientation: landscape) { } /*并不存在这种写法，只是为了方便你理解*/
+  </style>
+</head>
+
+<body>
+  <div class="news">
+    <ul>
+      <li>我我我我我我我我我我我我我我我</li>
+      <li>我我我我我我我我我我我我我我我</li>
+      <li>我我我我我我我我我我我我我我我</li>
+      <li>我我我我我我我我我我我我我我我</li>
+      <li>我我我我我我我我我我我我我我我</li>
+      <li>我我我我我我我我我我我我我我我</li>
+      <li>我我我我我我我我我我我我我我我</li>
+    </ul>
+  </div>
+</body>
+<script>
+</script>
+
+</html>

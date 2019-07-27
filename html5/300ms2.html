@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>重写a链接解决穿透</title>
+  <style type="text/css">
+  div{position:absolute; left: 0px; top:0px; width: 100px; height: 100px; background: #ab0003; opacity: .3}
+  </style>
+</head>
+<body>
+  <a href="http://www.baidu.com">baidu</a>
+  <a href="http://www.taobao.com">taobao</a>  
+  <div></div>
+  <script type="text/javascript">
+  const getA=document.querySelectorAll("a")
+  const getDiv=document.querySelector("div")
+  getDiv.addEventListener("click", function(e){
+    this.style.cssText+=';display:none;'
+  })
+  </script>
+</body>
+</html>
